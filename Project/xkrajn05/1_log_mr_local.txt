@@ -1,0 +1,565 @@
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+
+> Task :run
+2022-12-23 13:13:20,078 INFO  [main] hdfs.MiniDFSCluster (MiniDFSCluster.java:<init>(514)) - starting cluster: numNameNodes=1, numDataNodes=1
+2022-12-23 13:13:20,592 WARN  [main] util.NativeCodeLoader (NativeCodeLoader.java:<clinit>(60)) - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Formatting using clusterid: testClusterID
+2022-12-23 13:13:20,697 INFO  [main] namenode.FSEditLog (FSEditLog.java:newInstance(229)) - Edit logging is async:true
+2022-12-23 13:13:20,730 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:<init>(785)) - KeyProvider: null
+2022-12-23 13:13:20,732 INFO  [main] namenode.FSNamesystem (FSNamesystemLock.java:<init>(123)) - fsLock is fair: true
+2022-12-23 13:13:20,732 INFO  [main] namenode.FSNamesystem (FSNamesystemLock.java:<init>(141)) - Detailed lock hold time metrics enabled: false
+2022-12-23 13:13:20,754 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:<init>(810)) - fsOwner             = sebasu (auth:SIMPLE)
+2022-12-23 13:13:20,754 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:<init>(811)) - supergroup          = supergroup
+2022-12-23 13:13:20,754 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:<init>(812)) - isPermissionEnabled = true
+2022-12-23 13:13:20,755 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:<init>(823)) - HA Enabled: false
+2022-12-23 13:13:20,801 INFO  [main] common.Util (Util.java:isDiskStatsEnabled(395)) - dfs.datanode.fileio.profiling.sampling.percentage set to 0. Disabling file IO profiling
+2022-12-23 13:13:20,807 INFO  [main] Configuration.deprecation (Configuration.java:logDeprecation(1395)) - hadoop.configured.node.mapping is deprecated. Instead, use net.topology.configured.node.mapping
+2022-12-23 13:13:20,808 INFO  [main] blockmanagement.DatanodeManager (DatanodeManager.java:<init>(303)) - dfs.block.invalidate.limit: configured=1000, counted=60, effected=1000
+2022-12-23 13:13:20,808 INFO  [main] blockmanagement.DatanodeManager (DatanodeManager.java:<init>(311)) - dfs.namenode.datanode.registration.ip-hostname-check=true
+2022-12-23 13:13:20,814 INFO  [main] blockmanagement.BlockManager (InvalidateBlocks.java:printBlockDeletionTime(79)) - dfs.namenode.startup.delay.block.deletion.sec is set to 000:00:00:00.000
+2022-12-23 13:13:20,815 INFO  [main] blockmanagement.BlockManager (InvalidateBlocks.java:printBlockDeletionTime(85)) - The block deletion will start around 2022 Dec 23 13:13:20
+2022-12-23 13:13:20,819 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(395)) - Computing capacity for map BlocksMap
+2022-12-23 13:13:20,819 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(396)) - VM type       = 64-bit
+2022-12-23 13:13:20,821 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(397)) - 2.0% max memory 3.1 GB = 63.5 MB
+2022-12-23 13:13:20,821 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(402)) - capacity      = 2^23 = 8388608 entries
+2022-12-23 13:13:20,838 INFO  [main] blockmanagement.BlockManager (BlockManager.java:createSPSManager(5330)) - Storage policy satisfier is disabled
+2022-12-23 13:13:20,838 INFO  [main] blockmanagement.BlockManager (BlockManager.java:createBlockTokenSecretManager(624)) - dfs.block.access.token.enable = false
+2022-12-23 13:13:20,844 INFO  [main] Configuration.deprecation (Configuration.java:logDeprecation(1395)) - No unit for dfs.namenode.safemode.extension(0) assuming MILLISECONDS
+2022-12-23 13:13:20,844 INFO  [main] blockmanagement.BlockManagerSafeMode (BlockManagerSafeMode.java:<init>(161)) - dfs.namenode.safemode.threshold-pct = 0.9990000128746033
+2022-12-23 13:13:20,844 INFO  [main] blockmanagement.BlockManagerSafeMode (BlockManagerSafeMode.java:<init>(162)) - dfs.namenode.safemode.min.datanodes = 0
+2022-12-23 13:13:20,844 INFO  [main] blockmanagement.BlockManagerSafeMode (BlockManagerSafeMode.java:<init>(164)) - dfs.namenode.safemode.extension = 0
+2022-12-23 13:13:20,845 INFO  [main] blockmanagement.BlockManager (BlockManager.java:<init>(610)) - defaultReplication         = 1
+2022-12-23 13:13:20,845 INFO  [main] blockmanagement.BlockManager (BlockManager.java:<init>(611)) - maxReplication             = 512
+2022-12-23 13:13:20,846 INFO  [main] blockmanagement.BlockManager (BlockManager.java:<init>(612)) - minReplication             = 1
+2022-12-23 13:13:20,846 INFO  [main] blockmanagement.BlockManager (BlockManager.java:<init>(613)) - maxReplicationStreams      = 2
+2022-12-23 13:13:20,846 INFO  [main] blockmanagement.BlockManager (BlockManager.java:<init>(614)) - redundancyRecheckInterval  = 3000ms
+2022-12-23 13:13:20,846 INFO  [main] blockmanagement.BlockManager (BlockManager.java:<init>(615)) - encryptDataTransfer        = false
+2022-12-23 13:13:20,846 INFO  [main] blockmanagement.BlockManager (BlockManager.java:<init>(616)) - maxNumBlocksToLog          = 1000
+2022-12-23 13:13:20,870 INFO  [main] namenode.FSDirectory (SerialNumberManager.java:<clinit>(51)) - GLOBAL serial map: bits=29 maxEntries=536870911
+2022-12-23 13:13:20,870 INFO  [main] namenode.FSDirectory (SerialNumberManager.java:<clinit>(51)) - USER serial map: bits=24 maxEntries=16777215
+2022-12-23 13:13:20,870 INFO  [main] namenode.FSDirectory (SerialNumberManager.java:<clinit>(51)) - GROUP serial map: bits=24 maxEntries=16777215
+2022-12-23 13:13:20,870 INFO  [main] namenode.FSDirectory (SerialNumberManager.java:<clinit>(51)) - XATTR serial map: bits=24 maxEntries=16777215
+2022-12-23 13:13:20,879 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(395)) - Computing capacity for map INodeMap
+2022-12-23 13:13:20,880 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(396)) - VM type       = 64-bit
+2022-12-23 13:13:20,880 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(397)) - 1.0% max memory 3.1 GB = 31.7 MB
+2022-12-23 13:13:20,880 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(402)) - capacity      = 2^22 = 4194304 entries
+2022-12-23 13:13:20,886 INFO  [main] namenode.FSDirectory (FSDirectory.java:<init>(292)) - ACLs enabled? false
+2022-12-23 13:13:20,887 INFO  [main] namenode.FSDirectory (FSDirectory.java:<init>(296)) - POSIX ACL inheritance enabled? true
+2022-12-23 13:13:20,887 INFO  [main] namenode.FSDirectory (FSDirectory.java:<init>(300)) - XAttrs enabled? true
+2022-12-23 13:13:20,887 INFO  [main] namenode.NameNode (FSDirectory.java:<init>(364)) - Caching file names occurring more than 10 times
+2022-12-23 13:13:20,890 INFO  [main] snapshot.SnapshotManager (SnapshotManager.java:<init>(124)) - Loaded config captureOpenFiles: false, skipCaptureAccessTimeOnlyChange: false, snapshotDiffAllowSnapRootDescendant: true, maxSnapshotLimit: 65536
+2022-12-23 13:13:20,892 INFO  [main] snapshot.SnapshotManager (DirectoryDiffListFactory.java:init(43)) - SkipList is disabled
+2022-12-23 13:13:20,896 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(395)) - Computing capacity for map cachedBlocks
+2022-12-23 13:13:20,896 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(396)) - VM type       = 64-bit
+2022-12-23 13:13:20,897 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(397)) - 0.25% max memory 3.1 GB = 7.9 MB
+2022-12-23 13:13:20,897 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(402)) - capacity      = 2^20 = 1048576 entries
+2022-12-23 13:13:20,906 INFO  [main] metrics.TopMetrics (TopMetrics.java:logConf(75)) - NNTop conf: dfs.namenode.top.window.num.buckets = 10
+2022-12-23 13:13:20,907 INFO  [main] metrics.TopMetrics (TopMetrics.java:logConf(77)) - NNTop conf: dfs.namenode.top.num.users = 10
+2022-12-23 13:13:20,907 INFO  [main] metrics.TopMetrics (TopMetrics.java:logConf(79)) - NNTop conf: dfs.namenode.top.windows.minutes = 1,5,25
+2022-12-23 13:13:20,914 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:initRetryCache(1026)) - Retry cache on namenode is enabled
+2022-12-23 13:13:20,914 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:initRetryCache(1034)) - Retry cache will use 0.03 of total heap and retry cache entry expiry time is 600000 millis
+2022-12-23 13:13:20,917 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(395)) - Computing capacity for map NameNodeRetryCache
+2022-12-23 13:13:20,917 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(396)) - VM type       = 64-bit
+2022-12-23 13:13:20,918 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(397)) - 0.029999999329447746% max memory 3.1 GB = 975.1 KB
+2022-12-23 13:13:20,918 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(402)) - capacity      = 2^17 = 131072 entries
+2022-12-23 13:13:20,944 INFO  [main] namenode.FSImage (FSImage.java:format(185)) - Allocated new BlockPoolId: BP-868859862-127.0.1.1-1671797600935
+2022-12-23 13:13:20,994 INFO  [main] common.Storage (NNStorage.java:format(595)) - Storage directory /tmp/1671797599293-0/name-0-1 has been successfully formatted.
+2022-12-23 13:13:21,053 INFO  [main] common.Storage (NNStorage.java:format(595)) - Storage directory /tmp/1671797599293-0/name-0-2 has been successfully formatted.
+2022-12-23 13:13:21,159 INFO  [FSImageSaver for /tmp/1671797599293-0/name-0-1 of type IMAGE_AND_EDITS] namenode.FSImageFormatProtobuf (FSImageFormatProtobuf.java:save(512)) - Saving image file /tmp/1671797599293-0/name-0-1/current/fsimage.ckpt_0000000000000000000 using no compression
+2022-12-23 13:13:21,159 INFO  [FSImageSaver for /tmp/1671797599293-0/name-0-2 of type IMAGE_AND_EDITS] namenode.FSImageFormatProtobuf (FSImageFormatProtobuf.java:save(512)) - Saving image file /tmp/1671797599293-0/name-0-2/current/fsimage.ckpt_0000000000000000000 using no compression
+2022-12-23 13:13:21,293 INFO  [FSImageSaver for /tmp/1671797599293-0/name-0-1 of type IMAGE_AND_EDITS] namenode.FSImageFormatProtobuf (FSImageFormatProtobuf.java:save(516)) - Image file /tmp/1671797599293-0/name-0-1/current/fsimage.ckpt_0000000000000000000 of size 401 bytes saved in 0 seconds .
+2022-12-23 13:13:21,293 INFO  [FSImageSaver for /tmp/1671797599293-0/name-0-2 of type IMAGE_AND_EDITS] namenode.FSImageFormatProtobuf (FSImageFormatProtobuf.java:save(516)) - Image file /tmp/1671797599293-0/name-0-2/current/fsimage.ckpt_0000000000000000000 of size 401 bytes saved in 0 seconds .
+2022-12-23 13:13:21,343 INFO  [main] namenode.NNStorageRetentionManager (NNStorageRetentionManager.java:getImageTxIdToRetain(203)) - Going to retain 1 images with txid >= 0
+2022-12-23 13:13:21,365 INFO  [main] namenode.NameNode (NameNode.java:createNameNode(1656)) - createNameNode []
+2022-12-23 13:13:21,436 WARN  [main] impl.MetricsConfig (MetricsConfig.java:loadFirst(136)) - Cannot locate configuration: tried hadoop-metrics2-namenode.properties,hadoop-metrics2.properties
+2022-12-23 13:13:21,583 INFO  [main] impl.MetricsSystemImpl (MetricsSystemImpl.java:startTimer(378)) - Scheduled Metric snapshot period at 10 second(s).
+2022-12-23 13:13:21,584 INFO  [main] impl.MetricsSystemImpl (MetricsSystemImpl.java:start(191)) - NameNode metrics system started
+2022-12-23 13:13:21,614 INFO  [main] namenode.NameNodeUtils (NameNodeUtils.java:getClientNamenodeAddress(79)) - fs.defaultFS is hdfs://127.0.0.1:0
+2022-12-23 13:13:21,656 INFO  [org.apache.hadoop.util.JvmPauseMonitor$Monitor@6d0b5baf] util.JvmPauseMonitor (JvmPauseMonitor.java:run(188)) - Starting JVM pause monitor
+2022-12-23 13:13:21,671 INFO  [main] hdfs.DFSUtil (DFSUtil.java:httpServerTemplateForNNAndJN(1645)) - Starting Web-server for hdfs at: http://localhost:0
+2022-12-23 13:13:21,691 INFO  [main] util.log (Log.java:initialized(169)) - Logging initialized @2682ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-12-23 13:13:21,859 INFO  [main] server.AuthenticationFilter (AuthenticationFilter.java:constructSecretProvider(240)) - Unable to initialize FileSignerSecretProvider, falling back to use random secrets.
+2022-12-23 13:13:21,877 INFO  [main] http.HttpRequestLog (HttpRequestLog.java:getRequestLog(82)) - Http request log for http.requests.namenode is not defined
+2022-12-23 13:13:21,887 INFO  [main] http.HttpServer2 (HttpServer2.java:addGlobalFilter(1003)) - Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
+2022-12-23 13:13:21,889 INFO  [main] http.HttpServer2 (HttpServer2.java:addFilter(976)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context hdfs
+2022-12-23 13:13:21,890 INFO  [main] http.HttpServer2 (HttpServer2.java:addFilter(986)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2022-12-23 13:13:21,939 INFO  [main] http.HttpServer2 (NameNodeHttpServer.java:initWebHdfs(103)) - Added filter 'org.apache.hadoop.hdfs.web.AuthFilter' (class=org.apache.hadoop.hdfs.web.AuthFilter)
+2022-12-23 13:13:21,939 INFO  [main] http.HttpServer2 (HttpServer2.java:addJerseyResourcePackage(819)) - addJerseyResourcePackage: packageName=org.apache.hadoop.hdfs.server.namenode.web.resources;org.apache.hadoop.hdfs.web.resources, pathSpec=/webhdfs/v1/*
+2022-12-23 13:13:21,952 INFO  [main] http.HttpServer2 (HttpServer2.java:bindListener(1219)) - Jetty bound to port 39759
+2022-12-23 13:13:21,954 INFO  [main] server.Server (Server.java:doStart(359)) - jetty-9.4.20.v20190813; built: 2019-08-13T21:28:18.144Z; git: 84700530e645e812b336747464d6fbbf370c9a20; jvm 11.0.17+8-post-Ubuntu-1ubuntu220.04
+2022-12-23 13:13:21,997 INFO  [main] server.session (DefaultSessionIdManager.java:doStart(333)) - DefaultSessionIdManager workerName=node0
+2022-12-23 13:13:21,997 INFO  [main] server.session (DefaultSessionIdManager.java:doStart(338)) - No SessionScavenger set, using defaults
+2022-12-23 13:13:21,999 INFO  [main] server.session (HouseKeeper.java:startScavenging(140)) - node0 Scavenging every 660000ms
+2022-12-23 13:13:22,014 INFO  [main] handler.ContextHandler (ContextHandler.java:doStart(824)) - Started o.e.j.s.ServletContextHandler@158d255c{static,/static,jar:file:/home/sebasu/.gradle/caches/modules-2/files-2.1/org.apache.hadoop/hadoop-hdfs/3.2.2/e644bd31b0e13dc30845cfc659c57fb1ee4a8786/hadoop-hdfs-3.2.2-tests.jar!/webapps/static,AVAILABLE}
+2022-12-23 13:13:22,031 WARN  [main] webapp.WebInfConfiguration (WebInfConfiguration.java:getCanonicalNameForWebAppTmpDir(794)) - Can't generate resourceBase as part of webapp tmp dir name: java.lang.NullPointerException
+2022-12-23 13:13:22,340 INFO  [main] handler.ContextHandler (ContextHandler.java:doStart(824)) - Started o.e.j.w.WebAppContext@36074e47{hdfs,/,file:///tmp/jetty-localhost-39759-_-any-787473125585912574.dir/webapp/,AVAILABLE}{jar:file:/home/sebasu/.gradle/caches/modules-2/files-2.1/org.apache.hadoop/hadoop-hdfs/3.2.2/e644bd31b0e13dc30845cfc659c57fb1ee4a8786/hadoop-hdfs-3.2.2-tests.jar!/webapps/hdfs}
+2022-12-23 13:13:22,356 INFO  [main] server.AbstractConnector (AbstractConnector.java:doStart(293)) - Started ServerConnector@1a6f5124{HTTP/1.1,[http/1.1]}{localhost:39759}
+2022-12-23 13:13:22,356 INFO  [main] server.Server (Server.java:doStart(399)) - Started @3347ms
+2022-12-23 13:13:22,364 INFO  [main] namenode.FSEditLog (FSEditLog.java:newInstance(229)) - Edit logging is async:true
+2022-12-23 13:13:22,390 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:<init>(785)) - KeyProvider: null
+2022-12-23 13:13:22,392 INFO  [main] namenode.FSNamesystem (FSNamesystemLock.java:<init>(123)) - fsLock is fair: true
+2022-12-23 13:13:22,393 INFO  [main] namenode.FSNamesystem (FSNamesystemLock.java:<init>(141)) - Detailed lock hold time metrics enabled: false
+2022-12-23 13:13:22,393 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:<init>(810)) - fsOwner             = sebasu (auth:SIMPLE)
+2022-12-23 13:13:22,393 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:<init>(811)) - supergroup          = supergroup
+2022-12-23 13:13:22,393 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:<init>(812)) - isPermissionEnabled = true
+2022-12-23 13:13:22,394 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:<init>(823)) - HA Enabled: false
+2022-12-23 13:13:22,394 INFO  [main] common.Util (Util.java:isDiskStatsEnabled(395)) - dfs.datanode.fileio.profiling.sampling.percentage set to 0. Disabling file IO profiling
+2022-12-23 13:13:22,395 INFO  [main] blockmanagement.DatanodeManager (DatanodeManager.java:<init>(303)) - dfs.block.invalidate.limit: configured=1000, counted=60, effected=1000
+2022-12-23 13:13:22,395 INFO  [main] blockmanagement.DatanodeManager (DatanodeManager.java:<init>(311)) - dfs.namenode.datanode.registration.ip-hostname-check=true
+2022-12-23 13:13:22,395 INFO  [main] blockmanagement.BlockManager (InvalidateBlocks.java:printBlockDeletionTime(79)) - dfs.namenode.startup.delay.block.deletion.sec is set to 000:00:00:00.000
+2022-12-23 13:13:22,396 INFO  [main] blockmanagement.BlockManager (InvalidateBlocks.java:printBlockDeletionTime(85)) - The block deletion will start around 2022 Dec 23 13:13:22
+2022-12-23 13:13:22,396 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(395)) - Computing capacity for map BlocksMap
+2022-12-23 13:13:22,396 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(396)) - VM type       = 64-bit
+2022-12-23 13:13:22,397 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(397)) - 2.0% max memory 3.1 GB = 63.5 MB
+2022-12-23 13:13:22,406 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(402)) - capacity      = 2^23 = 8388608 entries
+2022-12-23 13:13:22,435 INFO  [main] blockmanagement.BlockManager (BlockManager.java:createSPSManager(5330)) - Storage policy satisfier is disabled
+2022-12-23 13:13:22,436 INFO  [main] blockmanagement.BlockManager (BlockManager.java:createBlockTokenSecretManager(624)) - dfs.block.access.token.enable = false
+2022-12-23 13:13:22,436 INFO  [main] Configuration.deprecation (Configuration.java:logDeprecation(1395)) - No unit for dfs.namenode.safemode.extension(0) assuming MILLISECONDS
+2022-12-23 13:13:22,436 INFO  [main] blockmanagement.BlockManagerSafeMode (BlockManagerSafeMode.java:<init>(161)) - dfs.namenode.safemode.threshold-pct = 0.9990000128746033
+2022-12-23 13:13:22,436 INFO  [main] blockmanagement.BlockManagerSafeMode (BlockManagerSafeMode.java:<init>(162)) - dfs.namenode.safemode.min.datanodes = 0
+2022-12-23 13:13:22,437 INFO  [main] blockmanagement.BlockManagerSafeMode (BlockManagerSafeMode.java:<init>(164)) - dfs.namenode.safemode.extension = 0
+2022-12-23 13:13:22,437 INFO  [main] blockmanagement.BlockManager (BlockManager.java:<init>(610)) - defaultReplication         = 1
+2022-12-23 13:13:22,437 INFO  [main] blockmanagement.BlockManager (BlockManager.java:<init>(611)) - maxReplication             = 512
+2022-12-23 13:13:22,437 INFO  [main] blockmanagement.BlockManager (BlockManager.java:<init>(612)) - minReplication             = 1
+2022-12-23 13:13:22,437 INFO  [main] blockmanagement.BlockManager (BlockManager.java:<init>(613)) - maxReplicationStreams      = 2
+2022-12-23 13:13:22,437 INFO  [main] blockmanagement.BlockManager (BlockManager.java:<init>(614)) - redundancyRecheckInterval  = 3000ms
+2022-12-23 13:13:22,437 INFO  [main] blockmanagement.BlockManager (BlockManager.java:<init>(615)) - encryptDataTransfer        = false
+2022-12-23 13:13:22,437 INFO  [main] blockmanagement.BlockManager (BlockManager.java:<init>(616)) - maxNumBlocksToLog          = 1000
+2022-12-23 13:13:22,438 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(395)) - Computing capacity for map INodeMap
+2022-12-23 13:13:22,438 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(396)) - VM type       = 64-bit
+2022-12-23 13:13:22,439 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(397)) - 1.0% max memory 3.1 GB = 31.7 MB
+2022-12-23 13:13:22,439 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(402)) - capacity      = 2^22 = 4194304 entries
+2022-12-23 13:13:22,449 INFO  [main] namenode.FSDirectory (FSDirectory.java:<init>(292)) - ACLs enabled? false
+2022-12-23 13:13:22,449 INFO  [main] namenode.FSDirectory (FSDirectory.java:<init>(296)) - POSIX ACL inheritance enabled? true
+2022-12-23 13:13:22,449 INFO  [main] namenode.FSDirectory (FSDirectory.java:<init>(300)) - XAttrs enabled? true
+2022-12-23 13:13:22,450 INFO  [main] namenode.NameNode (FSDirectory.java:<init>(364)) - Caching file names occurring more than 10 times
+2022-12-23 13:13:22,450 INFO  [main] snapshot.SnapshotManager (SnapshotManager.java:<init>(124)) - Loaded config captureOpenFiles: false, skipCaptureAccessTimeOnlyChange: false, snapshotDiffAllowSnapRootDescendant: true, maxSnapshotLimit: 65536
+2022-12-23 13:13:22,450 INFO  [main] snapshot.SnapshotManager (DirectoryDiffListFactory.java:init(43)) - SkipList is disabled
+2022-12-23 13:13:22,450 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(395)) - Computing capacity for map cachedBlocks
+2022-12-23 13:13:22,450 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(396)) - VM type       = 64-bit
+2022-12-23 13:13:22,451 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(397)) - 0.25% max memory 3.1 GB = 7.9 MB
+2022-12-23 13:13:22,451 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(402)) - capacity      = 2^20 = 1048576 entries
+2022-12-23 13:13:22,454 INFO  [main] metrics.TopMetrics (TopMetrics.java:logConf(75)) - NNTop conf: dfs.namenode.top.window.num.buckets = 10
+2022-12-23 13:13:22,455 INFO  [main] metrics.TopMetrics (TopMetrics.java:logConf(77)) - NNTop conf: dfs.namenode.top.num.users = 10
+2022-12-23 13:13:22,455 INFO  [main] metrics.TopMetrics (TopMetrics.java:logConf(79)) - NNTop conf: dfs.namenode.top.windows.minutes = 1,5,25
+2022-12-23 13:13:22,455 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:initRetryCache(1026)) - Retry cache on namenode is enabled
+2022-12-23 13:13:22,455 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:initRetryCache(1034)) - Retry cache will use 0.03 of total heap and retry cache entry expiry time is 600000 millis
+2022-12-23 13:13:22,455 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(395)) - Computing capacity for map NameNodeRetryCache
+2022-12-23 13:13:22,455 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(396)) - VM type       = 64-bit
+2022-12-23 13:13:22,456 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(397)) - 0.029999999329447746% max memory 3.1 GB = 975.1 KB
+2022-12-23 13:13:22,456 INFO  [main] util.GSet (LightWeightGSet.java:computeCapacity(402)) - capacity      = 2^17 = 131072 entries
+2022-12-23 13:13:22,498 INFO  [main] common.Storage (Storage.java:tryLock(928)) - Lock on /tmp/1671797599293-0/name-0-1/in_use.lock acquired by nodename 5194@Sebus-DY
+2022-12-23 13:13:22,503 INFO  [main] common.Storage (Storage.java:tryLock(928)) - Lock on /tmp/1671797599293-0/name-0-2/in_use.lock acquired by nodename 5194@Sebus-DY
+2022-12-23 13:13:22,506 INFO  [main] namenode.FileJournalManager (FileJournalManager.java:recoverUnfinalizedSegments(428)) - Recovering unfinalized segments in /tmp/1671797599293-0/name-0-1/current
+2022-12-23 13:13:22,506 INFO  [main] namenode.FileJournalManager (FileJournalManager.java:recoverUnfinalizedSegments(428)) - Recovering unfinalized segments in /tmp/1671797599293-0/name-0-2/current
+2022-12-23 13:13:22,506 INFO  [main] namenode.FSImage (FSImage.java:loadFSImage(733)) - No edit log streams selected.
+2022-12-23 13:13:22,507 INFO  [main] namenode.FSImage (FSImage.java:loadFSImageFile(799)) - Planning to load image: FSImageFile(file=/tmp/1671797599293-0/name-0-1/current/fsimage_0000000000000000000, cpktTxId=0000000000000000000)
+2022-12-23 13:13:22,548 INFO  [main] namenode.FSImageFormatPBINode (FSImageFormatPBINode.java:loadINodeSection(234)) - Loading 1 INodes.
+2022-12-23 13:13:22,553 INFO  [main] namenode.FSImageFormatProtobuf (FSImageFormatProtobuf.java:load(246)) - Loaded FSImage in 0 seconds.
+2022-12-23 13:13:22,554 INFO  [main] namenode.FSImage (FSImage.java:loadFSImage(977)) - Loaded image for txid 0 from /tmp/1671797599293-0/name-0-1/current/fsimage_0000000000000000000
+2022-12-23 13:13:22,557 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:loadFSImage(1140)) - Need to save fs image? false (staleImage=false, haEnabled=false, isRollingUpgrade=false)
+2022-12-23 13:13:22,558 INFO  [main] namenode.FSEditLog (FSEditLog.java:startLogSegment(1365)) - Starting log segment at 1
+2022-12-23 13:13:22,587 INFO  [main] namenode.NameCache (NameCache.java:initialized(143)) - initialized with 0 entries 0 lookups
+2022-12-23 13:13:22,587 INFO  [main] namenode.FSNamesystem (FSNamesystem.java:loadFromDisk(757)) - Finished loading FSImage in 127 msecs
+2022-12-23 13:13:22,769 INFO  [main] namenode.NameNode (NameNodeRpcServer.java:<init>(451)) - RPC server is binding to localhost:0
+2022-12-23 13:13:22,769 INFO  [main] namenode.NameNode (NameNodeRpcServer.java:<init>(456)) - Enable NameNode state context:false
+2022-12-23 13:13:22,779 INFO  [main] ipc.CallQueueManager (CallQueueManager.java:<init>(85)) - Using callQueue: class java.util.concurrent.LinkedBlockingQueue, queueCapacity: 1000, scheduler: class org.apache.hadoop.ipc.DefaultRpcScheduler, ipcBackoff: false.
+2022-12-23 13:13:22,788 INFO  [Socket Reader #1 for port 0] ipc.Server (Server.java:run(1255)) - Starting Socket Reader #1 for port 0
+2022-12-23 13:13:23,060 INFO  [Listener at localhost/41473] namenode.NameNode (NameNode.java:initialize(746)) - Clients are to use localhost:41473 to access this namenode/service.
+2022-12-23 13:13:23,065 INFO  [Listener at localhost/41473] namenode.FSNamesystem (FSNamesystem.java:registerMBean(5123)) - Registered FSNamesystemState, ReplicatedBlocksState and ECBlockGroupsState MBeans.
+2022-12-23 13:13:23,104 INFO  [Listener at localhost/41473] namenode.LeaseManager (LeaseManager.java:getNumUnderConstructionBlocks(176)) - Number of blocks under construction: 0
+2022-12-23 13:13:23,127 INFO  [Listener at localhost/41473] blockmanagement.BlockManager (BlockManager.java:initializeReplQueues(5069)) - initializing replication queues
+2022-12-23 13:13:23,128 INFO  [Listener at localhost/41473] hdfs.StateChange (BlockManagerSafeMode.java:leaveSafeMode(400)) - STATE* Leaving safe mode after 0 secs
+2022-12-23 13:13:23,128 INFO  [Listener at localhost/41473] hdfs.StateChange (BlockManagerSafeMode.java:leaveSafeMode(406)) - STATE* Network topology has 0 racks and 0 datanodes
+2022-12-23 13:13:23,128 INFO  [Listener at localhost/41473] hdfs.StateChange (BlockManagerSafeMode.java:leaveSafeMode(408)) - STATE* UnderReplicatedBlocks has 0 blocks
+2022-12-23 13:13:23,140 INFO  [Reconstruction Queue Initializer] blockmanagement.BlockManager (BlockManager.java:processMisReplicatesAsync(3657)) - Total number of blocks            = 0
+2022-12-23 13:13:23,148 INFO  [Reconstruction Queue Initializer] blockmanagement.BlockManager (BlockManager.java:processMisReplicatesAsync(3658)) - Number of invalid blocks          = 0
+2022-12-23 13:13:23,148 INFO  [Reconstruction Queue Initializer] blockmanagement.BlockManager (BlockManager.java:processMisReplicatesAsync(3659)) - Number of under-replicated blocks = 0
+2022-12-23 13:13:23,148 INFO  [Reconstruction Queue Initializer] blockmanagement.BlockManager (BlockManager.java:processMisReplicatesAsync(3660)) - Number of  over-replicated blocks = 0
+2022-12-23 13:13:23,149 INFO  [Reconstruction Queue Initializer] blockmanagement.BlockManager (BlockManager.java:processMisReplicatesAsync(3662)) - Number of blocks being written    = 0
+2022-12-23 13:13:23,149 INFO  [Reconstruction Queue Initializer] hdfs.StateChange (BlockManager.java:processMisReplicatesAsync(3665)) - STATE* Replication Queue initialization scan for invalid, over- and under-replicated blocks completed in 17 msec
+2022-12-23 13:13:23,229 INFO  [IPC Server Responder] ipc.Server (Server.java:run(1497)) - IPC Server Responder: starting
+2022-12-23 13:13:23,235 INFO  [IPC Server listener on 0] ipc.Server (Server.java:run(1334)) - IPC Server listener on 0: starting
+2022-12-23 13:13:23,283 INFO  [Listener at localhost/41473] namenode.NameNode (NameNode.java:startCommonServices(852)) - NameNode RPC up at: localhost/127.0.0.1:41473
+2022-12-23 13:13:23,293 INFO  [Listener at localhost/41473] namenode.FSNamesystem (FSNamesystem.java:startActiveServices(1252)) - Starting services required for active state
+2022-12-23 13:13:23,293 INFO  [Listener at localhost/41473] namenode.FSDirectory (FSDirectory.java:updateCountForQuota(799)) - Initializing quota with 4 thread(s)
+2022-12-23 13:13:23,310 INFO  [Listener at localhost/41473] namenode.FSDirectory (FSDirectory.java:updateCountForQuota(808)) - Quota initialization completed in 16 milliseconds
+name space=1
+storage space=0
+storage types=RAM_DISK=0, SSD=0, DISK=0, ARCHIVE=0, PROVIDED=0
+2022-12-23 13:13:23,332 INFO  [CacheReplicationMonitor(186181423)] blockmanagement.CacheReplicationMonitor (CacheReplicationMonitor.java:run(160)) - Starting CacheReplicationMonitor with interval 30000 milliseconds
+2022-12-23 13:13:23,341 INFO  [Listener at localhost/41473] hdfs.MiniDFSCluster (MiniDFSCluster.java:startDataNodes(1682)) - Starting DataNode 0 with dfs.datanode.data.dir: [DISK]file:/tmp/1671797599293-0/data/data1,[DISK]file:/tmp/1671797599293-0/data/data2
+2022-12-23 13:13:23,401 INFO  [Listener at localhost/41473] checker.ThrottledAsyncChecker (ThrottledAsyncChecker.java:schedule(137)) - Scheduling a check for [DISK]file:/tmp/1671797599293-0/data/data1
+2022-12-23 13:13:23,428 INFO  [Listener at localhost/41473] checker.ThrottledAsyncChecker (ThrottledAsyncChecker.java:schedule(137)) - Scheduling a check for [DISK]file:/tmp/1671797599293-0/data/data2
+2022-12-23 13:13:23,461 INFO  [Listener at localhost/41473] impl.MetricsSystemImpl (MetricsSystemImpl.java:init(158)) - DataNode metrics system started (again)
+2022-12-23 13:13:23,465 INFO  [Listener at localhost/41473] common.Util (Util.java:isDiskStatsEnabled(395)) - dfs.datanode.fileio.profiling.sampling.percentage set to 0. Disabling file IO profiling
+2022-12-23 13:13:23,469 INFO  [Listener at localhost/41473] datanode.BlockScanner (BlockScanner.java:<init>(195)) - Initialized block scanner with targetBytesPerSec 1048576
+2022-12-23 13:13:23,473 INFO  [Listener at localhost/41473] datanode.DataNode (DataNode.java:<init>(500)) - Configured hostname is 127.0.0.1
+2022-12-23 13:13:23,474 INFO  [Listener at localhost/41473] common.Util (Util.java:isDiskStatsEnabled(395)) - dfs.datanode.fileio.profiling.sampling.percentage set to 0. Disabling file IO profiling
+2022-12-23 13:13:23,478 INFO  [Listener at localhost/41473] datanode.DataNode (DataNode.java:startDataNode(1403)) - Starting DataNode with maxLockedMemory = 0
+2022-12-23 13:13:23,486 INFO  [Listener at localhost/41473] datanode.DataNode (DataNode.java:initDataXceiver(1151)) - Opened streaming server at /127.0.0.1:41335
+2022-12-23 13:13:23,488 INFO  [Listener at localhost/41473] datanode.DataNode (DataXceiverServer.java:<init>(78)) - Balancing bandwidth is 10485760 bytes/s
+2022-12-23 13:13:23,488 INFO  [Listener at localhost/41473] datanode.DataNode (DataXceiverServer.java:<init>(79)) - Number threads for balancing is 50
+2022-12-23 13:13:23,497 INFO  [Listener at localhost/41473] server.AuthenticationFilter (AuthenticationFilter.java:constructSecretProvider(240)) - Unable to initialize FileSignerSecretProvider, falling back to use random secrets.
+2022-12-23 13:13:23,498 INFO  [Listener at localhost/41473] http.HttpRequestLog (HttpRequestLog.java:getRequestLog(82)) - Http request log for http.requests.datanode is not defined
+2022-12-23 13:13:23,500 INFO  [Listener at localhost/41473] http.HttpServer2 (HttpServer2.java:addGlobalFilter(1003)) - Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
+2022-12-23 13:13:23,501 INFO  [Listener at localhost/41473] http.HttpServer2 (HttpServer2.java:addFilter(976)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context datanode
+2022-12-23 13:13:23,501 INFO  [Listener at localhost/41473] http.HttpServer2 (HttpServer2.java:addFilter(986)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2022-12-23 13:13:23,506 INFO  [Listener at localhost/41473] http.HttpServer2 (HttpServer2.java:bindListener(1219)) - Jetty bound to port 45637
+2022-12-23 13:13:23,506 INFO  [Listener at localhost/41473] server.Server (Server.java:doStart(359)) - jetty-9.4.20.v20190813; built: 2019-08-13T21:28:18.144Z; git: 84700530e645e812b336747464d6fbbf370c9a20; jvm 11.0.17+8-post-Ubuntu-1ubuntu220.04
+2022-12-23 13:13:23,513 INFO  [Listener at localhost/41473] server.session (DefaultSessionIdManager.java:doStart(333)) - DefaultSessionIdManager workerName=node0
+2022-12-23 13:13:23,513 INFO  [Listener at localhost/41473] server.session (DefaultSessionIdManager.java:doStart(338)) - No SessionScavenger set, using defaults
+2022-12-23 13:13:23,514 INFO  [Listener at localhost/41473] server.session (HouseKeeper.java:startScavenging(140)) - node0 Scavenging every 660000ms
+2022-12-23 13:13:23,517 INFO  [Listener at localhost/41473] handler.ContextHandler (ContextHandler.java:doStart(824)) - Started o.e.j.s.ServletContextHandler@4da6d664{static,/static,jar:file:/home/sebasu/.gradle/caches/modules-2/files-2.1/org.apache.hadoop/hadoop-hdfs/3.2.2/e644bd31b0e13dc30845cfc659c57fb1ee4a8786/hadoop-hdfs-3.2.2-tests.jar!/webapps/static,AVAILABLE}
+2022-12-23 13:13:23,519 WARN  [Listener at localhost/41473] webapp.WebInfConfiguration (WebInfConfiguration.java:getCanonicalNameForWebAppTmpDir(794)) - Can't generate resourceBase as part of webapp tmp dir name: java.lang.NullPointerException
+2022-12-23 13:13:23,697 INFO  [Listener at localhost/41473] handler.ContextHandler (ContextHandler.java:doStart(824)) - Started o.e.j.w.WebAppContext@5fcfde70{datanode,/,file:///tmp/jetty-localhost-45637-_-any-3389554113134695545.dir/webapp/,AVAILABLE}{jar:file:/home/sebasu/.gradle/caches/modules-2/files-2.1/org.apache.hadoop/hadoop-hdfs/3.2.2/e644bd31b0e13dc30845cfc659c57fb1ee4a8786/hadoop-hdfs-3.2.2-tests.jar!/webapps/datanode}
+2022-12-23 13:13:23,699 INFO  [Listener at localhost/41473] server.AbstractConnector (AbstractConnector.java:doStart(293)) - Started ServerConnector@6cff61fc{HTTP/1.1,[http/1.1]}{localhost:45637}
+2022-12-23 13:13:23,699 INFO  [Listener at localhost/41473] server.Server (Server.java:doStart(399)) - Started @4690ms
+2022-12-23 13:13:23,892 INFO  [Listener at localhost/41473] web.DatanodeHttpServer (DatanodeHttpServer.java:start(256)) - Listening HTTP traffic on /127.0.0.1:35107
+2022-12-23 13:13:23,893 INFO  [org.apache.hadoop.util.JvmPauseMonitor$Monitor@5f95f1e1] util.JvmPauseMonitor (JvmPauseMonitor.java:run(188)) - Starting JVM pause monitor
+2022-12-23 13:13:23,898 INFO  [Listener at localhost/41473] datanode.DataNode (DataNode.java:startDataNode(1431)) - dnUserName = sebasu
+2022-12-23 13:13:23,898 INFO  [Listener at localhost/41473] datanode.DataNode (DataNode.java:startDataNode(1432)) - supergroup = supergroup
+2022-12-23 13:13:23,913 INFO  [Listener at localhost/41473] ipc.CallQueueManager (CallQueueManager.java:<init>(85)) - Using callQueue: class java.util.concurrent.LinkedBlockingQueue, queueCapacity: 1000, scheduler: class org.apache.hadoop.ipc.DefaultRpcScheduler, ipcBackoff: false.
+2022-12-23 13:13:23,915 INFO  [Socket Reader #1 for port 0] ipc.Server (Server.java:run(1255)) - Starting Socket Reader #1 for port 0
+2022-12-23 13:13:23,928 INFO  [Listener at localhost/36615] datanode.DataNode (DataNode.java:initIpcServer(1037)) - Opened IPC server at /127.0.0.1:36615
+2022-12-23 13:13:23,945 INFO  [Listener at localhost/36615] datanode.DataNode (BlockPoolManager.java:refreshNamenodes(149)) - Refresh request received for nameservices: null
+2022-12-23 13:13:23,947 INFO  [Listener at localhost/36615] datanode.DataNode (BlockPoolManager.java:doRefreshNamenodes(210)) - Starting BPOfferServices for nameservices: <default>
+2022-12-23 13:13:23,956 INFO  [Thread-59] datanode.DataNode (BPServiceActor.java:run(822)) - Block pool <registering> (Datanode Uuid unassigned) service to localhost/127.0.0.1:41473 starting to offer service
+2022-12-23 13:13:23,961 INFO  [IPC Server Responder] ipc.Server (Server.java:run(1497)) - IPC Server Responder: starting
+2022-12-23 13:13:23,962 INFO  [IPC Server listener on 0] ipc.Server (Server.java:run(1334)) - IPC Server listener on 0: starting
+2022-12-23 13:13:24,227 INFO  [Thread-59] datanode.DataNode (BPOfferService.java:verifyAndSetNamespaceInfo(379)) - Acknowledging ACTIVE Namenode during handshakeBlock pool <registering> (Datanode Uuid unassigned) service to localhost/127.0.0.1:41473
+2022-12-23 13:13:24,229 INFO  [Thread-59] common.Storage (DataStorage.java:getParallelVolumeLoadThreadsNum(354)) - Using 2 threads to upgrade data directories (dfs.datanode.parallel.volumes.load.threads.num=2, dataDirs=2)
+2022-12-23 13:13:24,240 INFO  [Thread-59] common.Storage (Storage.java:tryLock(928)) - Lock on /tmp/1671797599293-0/data/data1/in_use.lock acquired by nodename 5194@Sebus-DY
+2022-12-23 13:13:24,241 INFO  [Thread-59] common.Storage (DataStorage.java:loadStorageDirectory(282)) - Storage directory with location [DISK]file:/tmp/1671797599293-0/data/data1 is not formatted for namespace 1727403224. Formatting...
+2022-12-23 13:13:24,242 INFO  [Thread-59] common.Storage (DataStorage.java:createStorageID(160)) - Generated new storageID DS-0654aac9-d266-4af2-bccc-a549cc5a3d1c for directory /tmp/1671797599293-0/data/data1 
+2022-12-23 13:13:24,252 INFO  [Thread-59] common.Storage (Storage.java:tryLock(928)) - Lock on /tmp/1671797599293-0/data/data2/in_use.lock acquired by nodename 5194@Sebus-DY
+2022-12-23 13:13:24,252 INFO  [Thread-59] common.Storage (DataStorage.java:loadStorageDirectory(282)) - Storage directory with location [DISK]file:/tmp/1671797599293-0/data/data2 is not formatted for namespace 1727403224. Formatting...
+2022-12-23 13:13:24,252 INFO  [Thread-59] common.Storage (DataStorage.java:createStorageID(160)) - Generated new storageID DS-b7f6994e-fbef-4591-89d1-e21c5ecab5d8 for directory /tmp/1671797599293-0/data/data2 
+2022-12-23 13:13:24,297 INFO  [Thread-59] common.Storage (BlockPoolSliceStorage.java:recoverTransitionRead(251)) - Analyzing storage directories for bpid BP-868859862-127.0.1.1-1671797600935
+2022-12-23 13:13:24,298 INFO  [Thread-59] common.Storage (Storage.java:lock(887)) - Locking is disabled for /tmp/1671797599293-0/data/data1/current/BP-868859862-127.0.1.1-1671797600935
+2022-12-23 13:13:24,299 INFO  [Thread-59] common.Storage (BlockPoolSliceStorage.java:loadStorageDirectory(168)) - Block pool storage directory for location [DISK]file:/tmp/1671797599293-0/data/data1 and block pool id BP-868859862-127.0.1.1-1671797600935 is not formatted. Formatting ...
+2022-12-23 13:13:24,299 INFO  [Thread-59] common.Storage (BlockPoolSliceStorage.java:format(280)) - Formatting block pool BP-868859862-127.0.1.1-1671797600935 directory /tmp/1671797599293-0/data/data1/current/BP-868859862-127.0.1.1-1671797600935/current
+2022-12-23 13:13:24,333 INFO  [Thread-59] common.Storage (BlockPoolSliceStorage.java:recoverTransitionRead(251)) - Analyzing storage directories for bpid BP-868859862-127.0.1.1-1671797600935
+2022-12-23 13:13:24,333 INFO  [Thread-59] common.Storage (Storage.java:lock(887)) - Locking is disabled for /tmp/1671797599293-0/data/data2/current/BP-868859862-127.0.1.1-1671797600935
+2022-12-23 13:13:24,333 INFO  [Thread-59] common.Storage (BlockPoolSliceStorage.java:loadStorageDirectory(168)) - Block pool storage directory for location [DISK]file:/tmp/1671797599293-0/data/data2 and block pool id BP-868859862-127.0.1.1-1671797600935 is not formatted. Formatting ...
+2022-12-23 13:13:24,333 INFO  [Thread-59] common.Storage (BlockPoolSliceStorage.java:format(280)) - Formatting block pool BP-868859862-127.0.1.1-1671797600935 directory /tmp/1671797599293-0/data/data2/current/BP-868859862-127.0.1.1-1671797600935/current
+2022-12-23 13:13:24,345 INFO  [Thread-59] datanode.DataNode (DataNode.java:initStorage(1751)) - Setting up storage: nsid=1727403224;bpid=BP-868859862-127.0.1.1-1671797600935;lv=-57;nsInfo=lv=-65;cid=testClusterID;nsid=1727403224;c=1671797600935;bpid=BP-868859862-127.0.1.1-1671797600935;dnuuid=null
+2022-12-23 13:13:24,384 INFO  [Thread-59] datanode.DataNode (DataNode.java:checkDatanodeUuid(1549)) - Generated and persisted new Datanode UUID 5435336c-53af-41c3-9d57-72ed86fef261
+2022-12-23 13:13:24,520 INFO  [IPC Server handler 1 on default port 41473] FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8145)) - allowed=true	ugi=sebasu (auth:SIMPLE)	ip=/127.0.0.1	cmd=datanodeReport	src=null	dst=null	perm=null	proto=rpc
+2022-12-23 13:13:24,533 INFO  [Listener at localhost/36615] hdfs.MiniDFSCluster (MiniDFSCluster.java:shouldWait(2808)) - dnInfo.length != numDataNodes
+2022-12-23 13:13:24,533 INFO  [Listener at localhost/36615] hdfs.MiniDFSCluster (MiniDFSCluster.java:waitActive(2729)) - Waiting for cluster to become active
+2022-12-23 13:13:24,550 INFO  [Thread-59] impl.FsDatasetImpl (FsVolumeList.java:addVolume(304)) - Added new volume: DS-0654aac9-d266-4af2-bccc-a549cc5a3d1c
+2022-12-23 13:13:24,551 INFO  [Thread-59] impl.FsDatasetImpl (FsDatasetImpl.java:addVolume(464)) - Added volume - [DISK]file:/tmp/1671797599293-0/data/data1, StorageType: DISK
+2022-12-23 13:13:24,553 INFO  [Thread-59] impl.FsDatasetImpl (FsVolumeList.java:addVolume(304)) - Added new volume: DS-b7f6994e-fbef-4591-89d1-e21c5ecab5d8
+2022-12-23 13:13:24,554 INFO  [Thread-59] impl.FsDatasetImpl (FsDatasetImpl.java:addVolume(464)) - Added volume - [DISK]file:/tmp/1671797599293-0/data/data2, StorageType: DISK
+2022-12-23 13:13:24,557 INFO  [Thread-59] impl.MemoryMappableBlockLoader (MemoryMappableBlockLoader.java:initialize(48)) - Initializing cache loader: MemoryMappableBlockLoader.
+2022-12-23 13:13:24,560 INFO  [Thread-59] impl.FsDatasetImpl (FsDatasetImpl.java:registerMBean(2320)) - Registered FSDatasetState MBean
+2022-12-23 13:13:24,565 INFO  [Thread-59] impl.FsDatasetImpl (FsDatasetImpl.java:addBlockPool(2833)) - Adding block pool BP-868859862-127.0.1.1-1671797600935
+2022-12-23 13:13:24,567 INFO  [Thread-78] impl.FsDatasetImpl (FsVolumeList.java:run(406)) - Scanning block pool BP-868859862-127.0.1.1-1671797600935 on volume /tmp/1671797599293-0/data/data1...
+2022-12-23 13:13:24,571 INFO  [Thread-79] impl.FsDatasetImpl (FsVolumeList.java:run(406)) - Scanning block pool BP-868859862-127.0.1.1-1671797600935 on volume /tmp/1671797599293-0/data/data2...
+2022-12-23 13:13:24,610 INFO  [Thread-79] impl.FsDatasetImpl (FsVolumeList.java:run(411)) - Time taken to scan block pool BP-868859862-127.0.1.1-1671797600935 on /tmp/1671797599293-0/data/data2: 38ms
+2022-12-23 13:13:24,612 INFO  [Thread-78] impl.FsDatasetImpl (FsVolumeList.java:run(411)) - Time taken to scan block pool BP-868859862-127.0.1.1-1671797600935 on /tmp/1671797599293-0/data/data1: 44ms
+2022-12-23 13:13:24,612 INFO  [Thread-59] impl.FsDatasetImpl (FsVolumeList.java:addBlockPool(431)) - Total time to scan all replicas for block pool BP-868859862-127.0.1.1-1671797600935: 46ms
+2022-12-23 13:13:24,614 INFO  [Thread-82] impl.FsDatasetImpl (FsVolumeList.java:run(199)) - Adding replicas to map for block pool BP-868859862-127.0.1.1-1671797600935 on volume /tmp/1671797599293-0/data/data1...
+2022-12-23 13:13:24,614 INFO  [Thread-82] impl.BlockPoolSlice (BlockPoolSlice.java:readReplicasFromCache(881)) - Replica Cache file: /tmp/1671797599293-0/data/data1/current/BP-868859862-127.0.1.1-1671797600935/current/replicas doesn't exist 
+2022-12-23 13:13:24,616 INFO  [Thread-83] impl.FsDatasetImpl (FsVolumeList.java:run(199)) - Adding replicas to map for block pool BP-868859862-127.0.1.1-1671797600935 on volume /tmp/1671797599293-0/data/data2...
+2022-12-23 13:13:24,617 INFO  [Thread-83] impl.BlockPoolSlice (BlockPoolSlice.java:readReplicasFromCache(881)) - Replica Cache file: /tmp/1671797599293-0/data/data2/current/BP-868859862-127.0.1.1-1671797600935/current/replicas doesn't exist 
+2022-12-23 13:13:24,627 INFO  [Thread-83] impl.FsDatasetImpl (FsVolumeList.java:run(204)) - Time to add replicas to map for block pool BP-868859862-127.0.1.1-1671797600935 on volume /tmp/1671797599293-0/data/data2: 10ms
+2022-12-23 13:13:24,627 INFO  [Thread-82] impl.FsDatasetImpl (FsVolumeList.java:run(204)) - Time to add replicas to map for block pool BP-868859862-127.0.1.1-1671797600935 on volume /tmp/1671797599293-0/data/data1: 14ms
+2022-12-23 13:13:24,632 INFO  [Thread-59] impl.FsDatasetImpl (FsVolumeList.java:getAllVolumesMap(225)) - Total time to add all replicas to map for block pool BP-868859862-127.0.1.1-1671797600935: 19ms
+2022-12-23 13:13:24,633 INFO  [Thread-59] checker.ThrottledAsyncChecker (ThrottledAsyncChecker.java:schedule(137)) - Scheduling a check for /tmp/1671797599293-0/data/data1
+2022-12-23 13:13:24,635 INFO  [IPC Server handler 3 on default port 41473] FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8145)) - allowed=true	ugi=sebasu (auth:SIMPLE)	ip=/127.0.0.1	cmd=datanodeReport	src=null	dst=null	perm=null	proto=rpc
+2022-12-23 13:13:24,637 INFO  [Listener at localhost/36615] hdfs.MiniDFSCluster (MiniDFSCluster.java:shouldWait(2808)) - dnInfo.length != numDataNodes
+2022-12-23 13:13:24,638 INFO  [Listener at localhost/36615] hdfs.MiniDFSCluster (MiniDFSCluster.java:waitActive(2729)) - Waiting for cluster to become active
+2022-12-23 13:13:24,642 INFO  [Thread-59] checker.DatasetVolumeChecker (DatasetVolumeChecker.java:checkAllVolumes(222)) - Scheduled health check for volume /tmp/1671797599293-0/data/data1
+2022-12-23 13:13:24,643 INFO  [Thread-59] checker.ThrottledAsyncChecker (ThrottledAsyncChecker.java:schedule(137)) - Scheduling a check for /tmp/1671797599293-0/data/data2
+2022-12-23 13:13:24,644 INFO  [Thread-59] checker.DatasetVolumeChecker (DatasetVolumeChecker.java:checkAllVolumes(222)) - Scheduled health check for volume /tmp/1671797599293-0/data/data2
+2022-12-23 13:13:24,645 INFO  [VolumeScannerThread(/tmp/1671797599293-0/data/data1)] datanode.VolumeScanner (VolumeScanner.java:findNextUsableBlockIter(381)) - Now scanning bpid BP-868859862-127.0.1.1-1671797600935 on volume /tmp/1671797599293-0/data/data1
+2022-12-23 13:13:24,645 INFO  [VolumeScannerThread(/tmp/1671797599293-0/data/data2)] datanode.VolumeScanner (VolumeScanner.java:findNextUsableBlockIter(381)) - Now scanning bpid BP-868859862-127.0.1.1-1671797600935 on volume /tmp/1671797599293-0/data/data2
+2022-12-23 13:13:24,647 INFO  [VolumeScannerThread(/tmp/1671797599293-0/data/data2)] datanode.VolumeScanner (VolumeScanner.java:runLoop(539)) - VolumeScanner(/tmp/1671797599293-0/data/data2, DS-b7f6994e-fbef-4591-89d1-e21c5ecab5d8): finished scanning block pool BP-868859862-127.0.1.1-1671797600935
+2022-12-23 13:13:24,647 INFO  [VolumeScannerThread(/tmp/1671797599293-0/data/data1)] datanode.VolumeScanner (VolumeScanner.java:runLoop(539)) - VolumeScanner(/tmp/1671797599293-0/data/data1, DS-0654aac9-d266-4af2-bccc-a549cc5a3d1c): finished scanning block pool BP-868859862-127.0.1.1-1671797600935
+2022-12-23 13:13:24,664 INFO  [VolumeScannerThread(/tmp/1671797599293-0/data/data2)] datanode.VolumeScanner (VolumeScanner.java:findNextUsableBlockIter(398)) - VolumeScanner(/tmp/1671797599293-0/data/data2, DS-b7f6994e-fbef-4591-89d1-e21c5ecab5d8): no suitable block pools found to scan.  Waiting 1814399981 ms.
+2022-12-23 13:13:24,664 INFO  [VolumeScannerThread(/tmp/1671797599293-0/data/data1)] datanode.VolumeScanner (VolumeScanner.java:findNextUsableBlockIter(398)) - VolumeScanner(/tmp/1671797599293-0/data/data1, DS-0654aac9-d266-4af2-bccc-a549cc5a3d1c): no suitable block pools found to scan.  Waiting 1814399981 ms.
+2022-12-23 13:13:24,675 INFO  [Thread-59] datanode.DirectoryScanner (DirectoryScanner.java:start(282)) - Periodic Directory Tree Verification scan starting at 12/23/22, 7:09 PM with interval of 21600000ms
+2022-12-23 13:13:24,681 INFO  [BP-868859862-127.0.1.1-1671797600935 heartbeating to localhost/127.0.0.1:41473] datanode.DataNode (BPServiceActor.java:register(767)) - Block pool BP-868859862-127.0.1.1-1671797600935 (Datanode Uuid 5435336c-53af-41c3-9d57-72ed86fef261) service to localhost/127.0.0.1:41473 beginning handshake with NN
+2022-12-23 13:13:24,694 INFO  [IPC Server handler 4 on default port 41473] hdfs.StateChange (DatanodeManager.java:registerDatanode(1042)) - BLOCK* registerDatanode: from DatanodeRegistration(127.0.0.1:41335, datanodeUuid=5435336c-53af-41c3-9d57-72ed86fef261, infoPort=35107, infoSecurePort=0, ipcPort=36615, storageInfo=lv=-57;cid=testClusterID;nsid=1727403224;c=1671797600935) storage 5435336c-53af-41c3-9d57-72ed86fef261
+2022-12-23 13:13:24,696 INFO  [IPC Server handler 4 on default port 41473] net.NetworkTopology (NetworkTopology.java:add(145)) - Adding a new node: /default-rack/127.0.0.1:41335
+2022-12-23 13:13:24,696 INFO  [IPC Server handler 4 on default port 41473] blockmanagement.BlockReportLeaseManager (BlockReportLeaseManager.java:registerNode(204)) - Registered DN 5435336c-53af-41c3-9d57-72ed86fef261 (127.0.0.1:41335).
+2022-12-23 13:13:24,713 INFO  [BP-868859862-127.0.1.1-1671797600935 heartbeating to localhost/127.0.0.1:41473] datanode.DataNode (BPServiceActor.java:register(791)) - Block pool Block pool BP-868859862-127.0.1.1-1671797600935 (Datanode Uuid 5435336c-53af-41c3-9d57-72ed86fef261) service to localhost/127.0.0.1:41473 successfully registered with NN
+2022-12-23 13:13:24,713 INFO  [BP-868859862-127.0.1.1-1671797600935 heartbeating to localhost/127.0.0.1:41473] datanode.DataNode (BPServiceActor.java:offerService(616)) - For namenode localhost/127.0.0.1:41473 using BLOCKREPORT_INTERVAL of 21600000msec CACHEREPORT_INTERVAL of 10000msec Initial delay: 0msec; heartBeatInterval=3000
+2022-12-23 13:13:24,738 INFO  [IPC Server handler 5 on default port 41473] blockmanagement.DatanodeDescriptor (DatanodeDescriptor.java:updateStorage(993)) - Adding new storage ID DS-0654aac9-d266-4af2-bccc-a549cc5a3d1c for DN 127.0.0.1:41335
+2022-12-23 13:13:24,740 INFO  [IPC Server handler 5 on default port 41473] blockmanagement.DatanodeDescriptor (DatanodeDescriptor.java:updateStorage(993)) - Adding new storage ID DS-b7f6994e-fbef-4591-89d1-e21c5ecab5d8 for DN 127.0.0.1:41335
+2022-12-23 13:13:24,742 INFO  [IPC Server handler 6 on default port 41473] FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8145)) - allowed=true	ugi=sebasu (auth:SIMPLE)	ip=/127.0.0.1	cmd=datanodeReport	src=null	dst=null	perm=null	proto=rpc
+2022-12-23 13:13:24,748 INFO  [Listener at localhost/36615] hdfs.MiniDFSCluster (MiniDFSCluster.java:waitActive(2784)) - Cluster is active
+2022-12-23 13:13:24,768 INFO  [IPC Server handler 8 on default port 41473] FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8145)) - allowed=true	ugi=sebasu (auth:SIMPLE)	ip=/127.0.0.1	cmd=delete	src=/user/sebasu/gamessum/input	dst=null	perm=null	proto=rpc
+2022-12-23 13:13:24,774 INFO  [Block report processor] BlockStateChange (BlockManager.java:processReport(2718)) - BLOCK* processReport 0xff94e5abf13dbc94: Processing first storage report for DS-b7f6994e-fbef-4591-89d1-e21c5ecab5d8 from datanode 5435336c-53af-41c3-9d57-72ed86fef261
+2022-12-23 13:13:24,776 INFO  [Block report processor] BlockStateChange (BlockManager.java:processReport(2747)) - BLOCK* processReport 0xff94e5abf13dbc94: from storage DS-b7f6994e-fbef-4591-89d1-e21c5ecab5d8 node DatanodeRegistration(127.0.0.1:41335, datanodeUuid=5435336c-53af-41c3-9d57-72ed86fef261, infoPort=35107, infoSecurePort=0, ipcPort=36615, storageInfo=lv=-57;cid=testClusterID;nsid=1727403224;c=1671797600935), blocks: 0, hasStaleStorage: true, processing time: 2 msecs, invalidatedBlocks: 0
+2022-12-23 13:13:24,777 INFO  [Block report processor] BlockStateChange (BlockManager.java:processReport(2718)) - BLOCK* processReport 0xff94e5abf13dbc94: Processing first storage report for DS-0654aac9-d266-4af2-bccc-a549cc5a3d1c from datanode 5435336c-53af-41c3-9d57-72ed86fef261
+2022-12-23 13:13:24,777 INFO  [IPC Server handler 0 on default port 41473] FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8145)) - allowed=true	ugi=sebasu (auth:SIMPLE)	ip=/127.0.0.1	cmd=delete	src=/user/sebasu/gamessum/output	dst=null	perm=null	proto=rpc
+2022-12-23 13:13:24,777 INFO  [Block report processor] BlockStateChange (BlockManager.java:processReport(2747)) - BLOCK* processReport 0xff94e5abf13dbc94: from storage DS-0654aac9-d266-4af2-bccc-a549cc5a3d1c node DatanodeRegistration(127.0.0.1:41335, datanodeUuid=5435336c-53af-41c3-9d57-72ed86fef261, infoPort=35107, infoSecurePort=0, ipcPort=36615, storageInfo=lv=-57;cid=testClusterID;nsid=1727403224;c=1671797600935), blocks: 0, hasStaleStorage: false, processing time: 0 msecs, invalidatedBlocks: 0
+2022-12-23 13:13:24,792 INFO  [IPC Server handler 9 on default port 41473] FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8145)) - allowed=true	ugi=sebasu (auth:SIMPLE)	ip=/127.0.0.1	cmd=mkdirs	src=/user/sebasu/gamessum/input	dst=null	perm=sebasu:supergroup:rwxr-xr-x	proto=rpc
+2022-12-23 13:13:24,808 INFO  [BP-868859862-127.0.1.1-1671797600935 heartbeating to localhost/127.0.0.1:41473] datanode.DataNode (BPServiceActor.java:blockReport(424)) - Successfully sent block report 0xff94e5abf13dbc94,  containing 2 storage report(s), of which we sent 2. The reports had 0 total blocks and used 1 RPC(s). This took 3 msec to generate and 48 msecs for RPC and NN processing. Got back one command: FinalizeCommand/5.
+2022-12-23 13:13:24,809 INFO  [BP-868859862-127.0.1.1-1671797600935 heartbeating to localhost/127.0.0.1:41473] datanode.DataNode (BPOfferService.java:processCommandFromActive(761)) - Got finalize command for block pool BP-868859862-127.0.1.1-1671797600935
+2022-12-23 13:13:24,827 INFO  [IPC Server handler 2 on default port 41473] FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8145)) - allowed=true	ugi=sebasu (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/user/sebasu/gamessum/input	dst=null	perm=null	proto=rpc
+2022-12-23 13:13:24,836 INFO  [IPC Server handler 1 on default port 41473] FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8145)) - allowed=true	ugi=sebasu (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/user/sebasu/gamessum/input/Fielding.csv	dst=null	perm=null	proto=rpc
+2022-12-23 13:13:24,861 INFO  [IPC Server handler 3 on default port 41473] FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8145)) - allowed=true	ugi=sebasu (auth:SIMPLE)	ip=/127.0.0.1	cmd=create	src=/user/sebasu/gamessum/input/Fielding.csv	dst=null	perm=sebasu:supergroup:rw-r--r--	proto=rpc
+2022-12-23 13:13:24,901 INFO  [IPC Server handler 4 on default port 41473] hdfs.StateChange (FSDirWriteFileOp.java:logAllocatedBlock(798)) - BLOCK* allocate blk_1073741825_1001, replicas=127.0.0.1:41335 for /user/sebasu/gamessum/input/Fielding.csv
+2022-12-23 13:13:25,030 INFO  [DataXceiver for client DFSClient_NONMAPREDUCE_619765900_1 at /127.0.0.1:37244 [Receiving block BP-868859862-127.0.1.1-1671797600935:blk_1073741825_1001]] datanode.DataNode (DataXceiver.java:writeBlock(747)) - Receiving BP-868859862-127.0.1.1-1671797600935:blk_1073741825_1001 src: /127.0.0.1:37244 dest: /127.0.0.1:41335
+2022-12-23 13:13:25,148 INFO  [PacketResponder: BP-868859862-127.0.1.1-1671797600935:blk_1073741825_1001, type=LAST_IN_PIPELINE] DataNode.clienttrace (BlockReceiver.java:finalizeBlock(1533)) - src: /127.0.0.1:37244, dest: /127.0.0.1:41335, bytes: 7397555, op: HDFS_WRITE, cliID: DFSClient_NONMAPREDUCE_619765900_1, offset: 0, srvID: 5435336c-53af-41c3-9d57-72ed86fef261, blockid: BP-868859862-127.0.1.1-1671797600935:blk_1073741825_1001, duration(ns): 86834100
+2022-12-23 13:13:25,149 INFO  [PacketResponder: BP-868859862-127.0.1.1-1671797600935:blk_1073741825_1001, type=LAST_IN_PIPELINE] datanode.DataNode (BlockReceiver.java:run(1506)) - PacketResponder: BP-868859862-127.0.1.1-1671797600935:blk_1073741825_1001, type=LAST_IN_PIPELINE terminating
+2022-12-23 13:13:25,156 INFO  [IPC Server handler 5 on default port 41473] namenode.FSNamesystem (FSNamesystem.java:checkBlocksComplete(3014)) - BLOCK* blk_1073741825_1001 is COMMITTED but not COMPLETE(numNodes= 0 <  minimum = 1) in file /user/sebasu/gamessum/input/Fielding.csv
+2022-12-23 13:13:25,563 INFO  [IPC Server handler 0 on default port 41473] hdfs.StateChange (FSNamesystem.java:completeFile(2967)) - DIR* completeFile: /user/sebasu/gamessum/input/Fielding.csv is closed by DFSClient_NONMAPREDUCE_619765900_1
+2022-12-23 13:13:25,601 INFO  [Listener at localhost/36615] impl.MetricsSystemImpl (MetricsSystemImpl.java:init(158)) - JobTracker metrics system started (again)
+2022-12-23 13:13:25,614 INFO  [IPC Server handler 9 on default port 41473] FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8145)) - allowed=true	ugi=sebasu (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/user/sebasu/gamessum/output	dst=null	perm=null	proto=rpc
+2022-12-23 13:13:25,645 WARN  [Listener at localhost/36615] mapreduce.JobResourceUploader (JobResourceUploader.java:uploadJobJar(482)) - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2022-12-23 13:13:25,675 INFO  [IPC Server handler 7 on default port 41473] FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8145)) - allowed=true	ugi=sebasu (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/user/sebasu/gamessum/input	dst=null	perm=null	proto=rpc
+2022-12-23 13:13:25,680 INFO  [IPC Server handler 2 on default port 41473] FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8145)) - allowed=true	ugi=sebasu (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/user/sebasu/gamessum/input	dst=null	perm=null	proto=rpc
+2022-12-23 13:13:25,686 INFO  [Listener at localhost/36615] input.FileInputFormat (FileInputFormat.java:listStatus(292)) - Total input files to process : 1
+2022-12-23 13:13:25,761 INFO  [Listener at localhost/36615] mapreduce.JobSubmitter (JobSubmitter.java:submitJobInternal(202)) - number of splits:1
+2022-12-23 13:13:25,989 INFO  [Listener at localhost/36615] mapreduce.JobSubmitter (JobSubmitter.java:printTokens(298)) - Submitting tokens for job: job_local1907192417_0001
+2022-12-23 13:13:25,989 INFO  [Listener at localhost/36615] mapreduce.JobSubmitter (JobSubmitter.java:printTokens(299)) - Executing with tokens: []
+2022-12-23 13:13:26,160 INFO  [Listener at localhost/36615] mapreduce.Job (Job.java:submit(1569)) - The url to track the job: http://localhost:8080/
+2022-12-23 13:13:26,161 INFO  [Listener at localhost/36615] mapreduce.Job (Job.java:monitorAndPrintJob(1614)) - Running job: job_local1907192417_0001
+2022-12-23 13:13:26,162 INFO  [Thread-108] mapred.LocalJobRunner (LocalJobRunner.java:createOutputCommitter(501)) - OutputCommitter set in config null
+2022-12-23 13:13:26,178 INFO  [Thread-108] output.FileOutputCommitter (FileOutputCommitter.java:<init>(141)) - File Output Committer Algorithm version is 2
+2022-12-23 13:13:26,178 INFO  [Thread-108] output.FileOutputCommitter (FileOutputCommitter.java:<init>(156)) - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2022-12-23 13:13:26,179 INFO  [Thread-108] mapred.LocalJobRunner (LocalJobRunner.java:createOutputCommitter(519)) - OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2022-12-23 13:13:26,189 INFO  [IPC Server handler 0 on default port 41473] FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8145)) - allowed=true	ugi=sebasu (auth:SIMPLE)	ip=/127.0.0.1	cmd=mkdirs	src=/user/sebasu/gamessum/output/_temporary/0	dst=null	perm=sebasu:supergroup:rwxr-xr-x	proto=rpc
+2022-12-23 13:13:26,257 INFO  [Thread-108] mapred.LocalJobRunner (LocalJobRunner.java:runTasks(478)) - Waiting for map tasks
+2022-12-23 13:13:26,258 INFO  [LocalJobRunner Map Task Executor #0] mapred.LocalJobRunner (LocalJobRunner.java:run(252)) - Starting task: attempt_local1907192417_0001_m_000000_0
+2022-12-23 13:13:26,352 INFO  [LocalJobRunner Map Task Executor #0] output.FileOutputCommitter (FileOutputCommitter.java:<init>(141)) - File Output Committer Algorithm version is 2
+2022-12-23 13:13:26,355 INFO  [LocalJobRunner Map Task Executor #0] output.FileOutputCommitter (FileOutputCommitter.java:<init>(156)) - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2022-12-23 13:13:26,449 INFO  [LocalJobRunner Map Task Executor #0] mapred.Task (Task.java:initialize(626)) -  Using ResourceCalculatorProcessTree : [ ]
+2022-12-23 13:13:26,454 INFO  [LocalJobRunner Map Task Executor #0] mapred.MapTask (MapTask.java:runNewMapper(768)) - Processing split: hdfs://localhost:41473/user/sebasu/gamessum/input/Fielding.csv:0+7397555
+2022-12-23 13:13:26,538 INFO  [LocalJobRunner Map Task Executor #0] mapred.MapTask (MapTask.java:setEquator(1219)) - (EQUATOR) 0 kvi 26214396(104857584)
+2022-12-23 13:13:26,538 INFO  [LocalJobRunner Map Task Executor #0] mapred.MapTask (MapTask.java:init(1012)) - mapreduce.task.io.sort.mb: 100
+2022-12-23 13:13:26,538 INFO  [LocalJobRunner Map Task Executor #0] mapred.MapTask (MapTask.java:init(1013)) - soft limit at 83886080
+2022-12-23 13:13:26,538 INFO  [LocalJobRunner Map Task Executor #0] mapred.MapTask (MapTask.java:init(1014)) - bufstart = 0; bufvoid = 104857600
+2022-12-23 13:13:26,538 INFO  [LocalJobRunner Map Task Executor #0] mapred.MapTask (MapTask.java:init(1015)) - kvstart = 26214396; length = 6553600
+2022-12-23 13:13:26,540 INFO  [LocalJobRunner Map Task Executor #0] mapred.MapTask (MapTask.java:createSortingCollector(409)) - Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2022-12-23 13:13:26,548 INFO  [IPC Server handler 9 on default port 41473] FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8145)) - allowed=true	ugi=sebasu (auth:SIMPLE)	ip=/127.0.0.1	cmd=open	src=/user/sebasu/gamessum/input/Fielding.csv	dst=null	perm=null	proto=rpc
+2022-12-23 13:13:27,164 INFO  [Listener at localhost/36615] mapreduce.Job (Job.java:monitorAndPrintJob(1635)) - Job job_local1907192417_0001 running in uber mode : false
+2022-12-23 13:13:27,165 INFO  [Listener at localhost/36615] mapreduce.Job (Job.java:monitorAndPrintJob(1642)) -  map 0% reduce 0%
+2022-12-23 13:13:27,687 INFO  [LocalJobRunner Map Task Executor #0] mapred.LocalJobRunner (LocalJobRunner.java:statusUpdate(634)) - 
+2022-12-23 13:13:27,689 INFO  [LocalJobRunner Map Task Executor #0] mapred.MapTask (MapTask.java:flush(1476)) - Starting flush of map output
+2022-12-23 13:13:27,690 INFO  [LocalJobRunner Map Task Executor #0] mapred.MapTask (MapTask.java:flush(1498)) - Spilling map output
+2022-12-23 13:13:27,690 INFO  [LocalJobRunner Map Task Executor #0] mapred.MapTask (MapTask.java:flush(1499)) - bufstart = 0; bufend = 909391; bufvoid = 104857600
+2022-12-23 13:13:27,690 INFO  [LocalJobRunner Map Task Executor #0] mapred.MapTask (MapTask.java:flush(1501)) - kvstart = 26214396(104857584); kvend = 26019192(104076768); length = 195205/6553600
+2022-12-23 13:13:28,029 INFO  [LocalJobRunner Map Task Executor #0] mapred.MapTask (MapTask.java:sortAndSpill(1696)) - Finished spill 0
+2022-12-23 13:13:28,046 INFO  [LocalJobRunner Map Task Executor #0] mapred.Task (Task.java:done(1244)) - Task:attempt_local1907192417_0001_m_000000_0 is done. And is in the process of committing
+2022-12-23 13:13:28,050 INFO  [IPC Server handler 8 on default port 41473] FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8145)) - allowed=true	ugi=sebasu (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/user/sebasu/gamessum/output/_temporary/0/_temporary/attempt_local1907192417_0001_m_000000_0	dst=null	perm=null	proto=rpc
+2022-12-23 13:13:28,057 INFO  [LocalJobRunner Map Task Executor #0] mapred.LocalJobRunner (LocalJobRunner.java:statusUpdate(634)) - map
+2022-12-23 13:13:28,060 INFO  [LocalJobRunner Map Task Executor #0] mapred.Task (Task.java:sendDone(1380)) - Task 'attempt_local1907192417_0001_m_000000_0' done.
+2022-12-23 13:13:28,062 INFO  [LocalJobRunner Map Task Executor #0] mapred.Task (Task.java:done(1276)) - Final Counters for attempt_local1907192417_0001_m_000000_0: Counters: 23
+	File System Counters
+		FILE: Number of bytes read=7397739
+		FILE: Number of bytes written=1551118
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=7397555
+		HDFS: Number of bytes written=7397555
+		HDFS: Number of read operations=7
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=5
+		HDFS: Number of bytes read erasure-coded=0
+	Map-Reduce Framework
+		Map input records=147081
+		Map output records=48802
+		Map output bytes=909391
+		Map output materialized bytes=1007001
+		Input split bytes=127
+		Combine input records=0
+		Spilled Records=48802
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=30
+		Total committed heap usage (bytes)=495976448
+	File Input Format Counters 
+		Bytes Read=7397555
+2022-12-23 13:13:28,062 INFO  [LocalJobRunner Map Task Executor #0] mapred.LocalJobRunner (LocalJobRunner.java:run(277)) - Finishing task: attempt_local1907192417_0001_m_000000_0
+2022-12-23 13:13:28,071 INFO  [Thread-108] mapred.LocalJobRunner (LocalJobRunner.java:runTasks(486)) - map task executor complete.
+2022-12-23 13:13:28,080 INFO  [Thread-108] mapred.LocalJobRunner (LocalJobRunner.java:runTasks(478)) - Waiting for reduce tasks
+2022-12-23 13:13:28,081 INFO  [pool-23-thread-1] mapred.LocalJobRunner (LocalJobRunner.java:run(330)) - Starting task: attempt_local1907192417_0001_r_000000_0
+2022-12-23 13:13:28,110 INFO  [pool-23-thread-1] output.FileOutputCommitter (FileOutputCommitter.java:<init>(141)) - File Output Committer Algorithm version is 2
+2022-12-23 13:13:28,110 INFO  [pool-23-thread-1] output.FileOutputCommitter (FileOutputCommitter.java:<init>(156)) - FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2022-12-23 13:13:28,111 INFO  [pool-23-thread-1] mapred.Task (Task.java:initialize(626)) -  Using ResourceCalculatorProcessTree : [ ]
+2022-12-23 13:13:28,114 INFO  [pool-23-thread-1] mapred.ReduceTask (ReduceTask.java:run(363)) - Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@5c6f7d9a
+2022-12-23 13:13:28,115 INFO  [pool-23-thread-1] impl.MetricsSystemImpl (MetricsSystemImpl.java:init(158)) - JobTracker metrics system started (again)
+2022-12-23 13:13:28,141 INFO  [pool-23-thread-1] reduce.MergeManagerImpl (MergeManagerImpl.java:<init>(208)) - MergerManager: memoryLimit=2329726208, maxSingleShuffleLimit=582431552, mergeThreshold=1537619328, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+2022-12-23 13:13:28,145 INFO  [EventFetcher for fetching Map Completion Events] reduce.EventFetcher (EventFetcher.java:run(61)) - attempt_local1907192417_0001_r_000000_0 Thread started: EventFetcher for fetching Map Completion Events
+2022-12-23 13:13:28,171 INFO  [Listener at localhost/36615] mapreduce.Job (Job.java:monitorAndPrintJob(1642)) -  map 100% reduce 0%
+2022-12-23 13:13:28,208 INFO  [localfetcher#1] reduce.LocalFetcher (LocalFetcher.java:copyMapOutput(145)) - localfetcher#1 about to shuffle output of map attempt_local1907192417_0001_m_000000_0 decomp: 1006997 len: 1007001 to MEMORY
+2022-12-23 13:13:28,215 INFO  [localfetcher#1] reduce.InMemoryMapOutput (InMemoryMapOutput.java:doShuffle(94)) - Read 1006997 bytes from map-output for attempt_local1907192417_0001_m_000000_0
+2022-12-23 13:13:28,223 INFO  [localfetcher#1] reduce.MergeManagerImpl (MergeManagerImpl.java:closeInMemoryFile(323)) - closeInMemoryFile -> map-output of size: 1006997, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->1006997
+2022-12-23 13:13:28,230 INFO  [EventFetcher for fetching Map Completion Events] reduce.EventFetcher (EventFetcher.java:run(76)) - EventFetcher is interrupted.. Returning
+2022-12-23 13:13:28,236 INFO  [pool-23-thread-1] mapred.LocalJobRunner (LocalJobRunner.java:statusUpdate(634)) - 1 / 1 copied.
+2022-12-23 13:13:28,239 INFO  [pool-23-thread-1] reduce.MergeManagerImpl (MergeManagerImpl.java:finalMerge(695)) - finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+2022-12-23 13:13:28,261 INFO  [pool-23-thread-1] mapred.Merger (Merger.java:merge(606)) - Merging 1 sorted segments
+2022-12-23 13:13:28,261 INFO  [pool-23-thread-1] mapred.Merger (Merger.java:merge(705)) - Down to the last merge-pass, with 1 segments left of total size: 1006981 bytes
+2022-12-23 13:13:28,388 INFO  [pool-23-thread-1] reduce.MergeManagerImpl (MergeManagerImpl.java:finalMerge(762)) - Merged 1 segments, 1006997 bytes to disk to satisfy reduce memory limit
+2022-12-23 13:13:28,389 INFO  [pool-23-thread-1] reduce.MergeManagerImpl (MergeManagerImpl.java:finalMerge(792)) - Merging 1 files, 1007001 bytes from disk
+2022-12-23 13:13:28,390 INFO  [pool-23-thread-1] reduce.MergeManagerImpl (MergeManagerImpl.java:finalMerge(807)) - Merging 0 segments, 0 bytes from memory into reduce
+2022-12-23 13:13:28,390 INFO  [pool-23-thread-1] mapred.Merger (Merger.java:merge(606)) - Merging 1 sorted segments
+2022-12-23 13:13:28,390 INFO  [pool-23-thread-1] mapred.Merger (Merger.java:merge(705)) - Down to the last merge-pass, with 1 segments left of total size: 1006981 bytes
+2022-12-23 13:13:28,401 INFO  [pool-23-thread-1] mapred.LocalJobRunner (LocalJobRunner.java:statusUpdate(634)) - 1 / 1 copied.
+2022-12-23 13:13:28,408 INFO  [IPC Server handler 9 on default port 41473] FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8145)) - allowed=true	ugi=sebasu (auth:SIMPLE)	ip=/127.0.0.1	cmd=create	src=/user/sebasu/gamessum/output/_temporary/0/_temporary/attempt_local1907192417_0001_r_000000_0/part-r-00000	dst=null	perm=sebasu:supergroup:rw-r--r--	proto=rpc
+2022-12-23 13:13:28,429 INFO  [pool-23-thread-1] Configuration.deprecation (Configuration.java:logDeprecation(1395)) - mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+2022-12-23 13:13:28,608 INFO  [IPC Server handler 7 on default port 41473] hdfs.StateChange (FSDirWriteFileOp.java:logAllocatedBlock(798)) - BLOCK* allocate blk_1073741826_1002, replicas=127.0.0.1:41335 for /user/sebasu/gamessum/output/_temporary/0/_temporary/attempt_local1907192417_0001_r_000000_0/part-r-00000
+2022-12-23 13:13:28,628 INFO  [DataXceiver for client DFSClient_NONMAPREDUCE_619765900_1 at /127.0.0.1:37248 [Receiving block BP-868859862-127.0.1.1-1671797600935:blk_1073741826_1002]] datanode.DataNode (DataXceiver.java:writeBlock(747)) - Receiving BP-868859862-127.0.1.1-1671797600935:blk_1073741826_1002 src: /127.0.0.1:37248 dest: /127.0.0.1:41335
+2022-12-23 13:13:28,791 INFO  [PacketResponder: BP-868859862-127.0.1.1-1671797600935:blk_1073741826_1002, type=LAST_IN_PIPELINE] DataNode.clienttrace (BlockReceiver.java:finalizeBlock(1533)) - src: /127.0.0.1:37248, dest: /127.0.0.1:41335, bytes: 344989, op: HDFS_WRITE, cliID: DFSClient_NONMAPREDUCE_619765900_1, offset: 0, srvID: 5435336c-53af-41c3-9d57-72ed86fef261, blockid: BP-868859862-127.0.1.1-1671797600935:blk_1073741826_1002, duration(ns): 150573900
+2022-12-23 13:13:28,792 INFO  [PacketResponder: BP-868859862-127.0.1.1-1671797600935:blk_1073741826_1002, type=LAST_IN_PIPELINE] datanode.DataNode (BlockReceiver.java:run(1506)) - PacketResponder: BP-868859862-127.0.1.1-1671797600935:blk_1073741826_1002, type=LAST_IN_PIPELINE terminating
+2022-12-23 13:13:28,800 INFO  [IPC Server handler 4 on default port 41473] hdfs.StateChange (FSNamesystem.java:completeFile(2967)) - DIR* completeFile: /user/sebasu/gamessum/output/_temporary/0/_temporary/attempt_local1907192417_0001_r_000000_0/part-r-00000 is closed by DFSClient_NONMAPREDUCE_619765900_1
+2022-12-23 13:13:28,802 INFO  [pool-23-thread-1] mapred.Task (Task.java:done(1244)) - Task:attempt_local1907192417_0001_r_000000_0 is done. And is in the process of committing
+2022-12-23 13:13:28,818 INFO  [IPC Server handler 6 on default port 41473] FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8145)) - allowed=true	ugi=sebasu (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/user/sebasu/gamessum/output/_temporary/0/_temporary/attempt_local1907192417_0001_r_000000_0	dst=null	perm=null	proto=rpc
+2022-12-23 13:13:28,820 INFO  [pool-23-thread-1] mapred.LocalJobRunner (LocalJobRunner.java:statusUpdate(634)) - 1 / 1 copied.
+2022-12-23 13:13:28,821 INFO  [pool-23-thread-1] mapred.Task (Task.java:commit(1421)) - Task attempt_local1907192417_0001_r_000000_0 is allowed to commit now
+2022-12-23 13:13:28,823 INFO  [IPC Server handler 8 on default port 41473] FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8145)) - allowed=true	ugi=sebasu (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/user/sebasu/gamessum/output/_temporary/0/_temporary/attempt_local1907192417_0001_r_000000_0	dst=null	perm=null	proto=rpc
+2022-12-23 13:13:28,826 INFO  [IPC Server handler 5 on default port 41473] FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8145)) - allowed=true	ugi=sebasu (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/user/sebasu/gamessum/output	dst=null	perm=null	proto=rpc
+2022-12-23 13:13:28,835 INFO  [IPC Server handler 0 on default port 41473] FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8145)) - allowed=true	ugi=sebasu (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/user/sebasu/gamessum/output/_temporary/0/_temporary/attempt_local1907192417_0001_r_000000_0	dst=null	perm=null	proto=rpc
+2022-12-23 13:13:28,840 INFO  [IPC Server handler 9 on default port 41473] FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8145)) - allowed=true	ugi=sebasu (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/user/sebasu/gamessum/output/part-r-00000	dst=null	perm=null	proto=rpc
+2022-12-23 13:13:28,851 INFO  [IPC Server handler 7 on default port 41473] FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8145)) - allowed=true	ugi=sebasu (auth:SIMPLE)	ip=/127.0.0.1	cmd=rename	src=/user/sebasu/gamessum/output/_temporary/0/_temporary/attempt_local1907192417_0001_r_000000_0/part-r-00000	dst=/user/sebasu/gamessum/output/part-r-00000	perm=sebasu:supergroup:rw-r--r--	proto=rpc
+2022-12-23 13:13:28,854 INFO  [pool-23-thread-1] output.FileOutputCommitter (FileOutputCommitter.java:commitTask(606)) - Saved output of task 'attempt_local1907192417_0001_r_000000_0' to hdfs://localhost:41473/user/sebasu/gamessum/output
+2022-12-23 13:13:28,858 INFO  [pool-23-thread-1] mapred.LocalJobRunner (LocalJobRunner.java:statusUpdate(634)) - reduce > reduce
+2022-12-23 13:13:28,858 INFO  [pool-23-thread-1] mapred.Task (Task.java:sendDone(1380)) - Task 'attempt_local1907192417_0001_r_000000_0' done.
+2022-12-23 13:13:28,859 INFO  [pool-23-thread-1] mapred.Task (Task.java:done(1276)) - Final Counters for attempt_local1907192417_0001_r_000000_0: Counters: 30
+	File System Counters
+		FILE: Number of bytes read=9411773
+		FILE: Number of bytes written=2558119
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=7397555
+		HDFS: Number of bytes written=7742544
+		HDFS: Number of read operations=12
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=7
+		HDFS: Number of bytes read erasure-coded=0
+	Map-Reduce Framework
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=17726
+		Reduce shuffle bytes=1007001
+		Reduce input records=48802
+		Reduce output records=12383
+		Spilled Records=48802
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=14
+		Total committed heap usage (bytes)=495976448
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Output Format Counters 
+		Bytes Written=344989
+2022-12-23 13:13:28,862 INFO  [pool-23-thread-1] mapred.LocalJobRunner (LocalJobRunner.java:run(353)) - Finishing task: attempt_local1907192417_0001_r_000000_0
+2022-12-23 13:13:28,862 INFO  [Thread-108] mapred.LocalJobRunner (LocalJobRunner.java:runTasks(486)) - reduce task executor complete.
+2022-12-23 13:13:28,870 INFO  [IPC Server handler 2 on default port 41473] FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8145)) - allowed=true	ugi=sebasu (auth:SIMPLE)	ip=/127.0.0.1	cmd=delete	src=/user/sebasu/gamessum/output/_temporary	dst=null	perm=null	proto=rpc
+2022-12-23 13:13:28,894 INFO  [IPC Server handler 1 on default port 41473] FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8145)) - allowed=true	ugi=sebasu (auth:SIMPLE)	ip=/127.0.0.1	cmd=create	src=/user/sebasu/gamessum/output/_SUCCESS	dst=null	perm=sebasu:supergroup:rw-r--r--	proto=rpc
+2022-12-23 13:13:28,909 INFO  [IPC Server handler 3 on default port 41473] hdfs.StateChange (FSNamesystem.java:completeFile(2967)) - DIR* completeFile: /user/sebasu/gamessum/output/_SUCCESS is closed by DFSClient_NONMAPREDUCE_619765900_1
+2022-12-23 13:13:29,172 INFO  [Listener at localhost/36615] mapreduce.Job (Job.java:monitorAndPrintJob(1642)) -  map 100% reduce 100%
+2022-12-23 13:13:29,172 INFO  [Listener at localhost/36615] mapreduce.Job (Job.java:monitorAndPrintJob(1653)) - Job job_local1907192417_0001 completed successfully
+2022-12-23 13:13:29,187 INFO  [Listener at localhost/36615] mapreduce.Job (Job.java:monitorAndPrintJob(1660)) - Counters: 36
+	File System Counters
+		FILE: Number of bytes read=16809512
+		FILE: Number of bytes written=4109237
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=14795110
+		HDFS: Number of bytes written=15140099
+		HDFS: Number of read operations=19
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=12
+		HDFS: Number of bytes read erasure-coded=0
+	Map-Reduce Framework
+		Map input records=147081
+		Map output records=48802
+		Map output bytes=909391
+		Map output materialized bytes=1007001
+		Input split bytes=127
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=17726
+		Reduce shuffle bytes=1007001
+		Reduce input records=48802
+		Reduce output records=12383
+		Spilled Records=97604
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=44
+		Total committed heap usage (bytes)=991952896
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=7397555
+	File Output Format Counters 
+		Bytes Written=344989
+2022-12-23 13:13:29,198 INFO  [IPC Server handler 4 on default port 41473] FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8145)) - allowed=true	ugi=sebasu (auth:SIMPLE)	ip=/127.0.0.1	cmd=listStatus	src=/user/sebasu/gamessum/output	dst=null	perm=null	proto=rpc
+2022-12-23 13:13:29,202 INFO  [IPC Server handler 6 on default port 41473] FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8145)) - allowed=true	ugi=sebasu (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/user/sebasu/gamessum/output/_SUCCESS	dst=null	perm=null	proto=rpc
+2022-12-23 13:13:29,208 INFO  [IPC Server handler 8 on default port 41473] FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8145)) - allowed=true	ugi=sebasu (auth:SIMPLE)	ip=/127.0.0.1	cmd=open	src=/user/sebasu/gamessum/output/_SUCCESS	dst=null	perm=null	proto=rpc
+2022-12-23 13:13:29,220 INFO  [IPC Server handler 5 on default port 41473] FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8145)) - allowed=true	ugi=sebasu (auth:SIMPLE)	ip=/127.0.0.1	cmd=delete	src=/user/sebasu/gamessum/output/_SUCCESS	dst=null	perm=null	proto=rpc
+2022-12-23 13:13:29,223 INFO  [IPC Server handler 0 on default port 41473] FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8145)) - allowed=true	ugi=sebasu (auth:SIMPLE)	ip=/127.0.0.1	cmd=getfileinfo	src=/user/sebasu/gamessum/output/part-r-00000	dst=null	perm=null	proto=rpc
+2022-12-23 13:13:29,226 INFO  [IPC Server handler 9 on default port 41473] FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8145)) - allowed=true	ugi=sebasu (auth:SIMPLE)	ip=/127.0.0.1	cmd=open	src=/user/sebasu/gamessum/output/part-r-00000	dst=null	perm=null	proto=rpc
+2022-12-23 13:13:29,245 INFO  [IPC Server handler 7 on default port 41473] FSNamesystem.audit (FSNamesystem.java:logAuditMessage(8145)) - allowed=true	ugi=sebasu (auth:SIMPLE)	ip=/127.0.0.1	cmd=delete	src=/user/sebasu/gamessum/output/part-r-00000	dst=null	perm=null	proto=rpc
+2022-12-23 13:13:29,247 INFO  [Listener at localhost/36615] hdfs.MiniDFSCluster (MiniDFSCluster.java:shutdown(2072)) - Shutting down the Mini HDFS Cluster
+2022-12-23 13:13:29,247 INFO  [Listener at localhost/36615] hdfs.MiniDFSCluster (MiniDFSCluster.java:shutdownDataNode(2120)) - Shutting down DataNode 0
+2022-12-23 13:13:29,248 WARN  [Listener at localhost/36615] datanode.DirectoryScanner (DirectoryScanner.java:shutdown(343)) - DirectoryScanner: shutdown has been called
+2022-12-23 13:13:29,248 INFO  [org.apache.hadoop.hdfs.server.datanode.DataXceiverServer@12fcc71f] datanode.DataNode (DataXceiverServer.java:closeAllPeers(281)) - Closing all peers.
+2022-12-23 13:13:29,251 INFO  [VolumeScannerThread(/tmp/1671797599293-0/data/data1)] datanode.VolumeScanner (VolumeScanner.java:run(637)) - VolumeScanner(/tmp/1671797599293-0/data/data1, DS-0654aac9-d266-4af2-bccc-a549cc5a3d1c) exiting.
+2022-12-23 13:13:29,251 INFO  [VolumeScannerThread(/tmp/1671797599293-0/data/data2)] datanode.VolumeScanner (VolumeScanner.java:run(637)) - VolumeScanner(/tmp/1671797599293-0/data/data2, DS-b7f6994e-fbef-4591-89d1-e21c5ecab5d8) exiting.
+2022-12-23 13:13:29,272 INFO  [Listener at localhost/36615] handler.ContextHandler (ContextHandler.java:doStop(1007)) - Stopped o.e.j.w.WebAppContext@5fcfde70{datanode,/,null,UNAVAILABLE}{jar:file:/home/sebasu/.gradle/caches/modules-2/files-2.1/org.apache.hadoop/hadoop-hdfs/3.2.2/e644bd31b0e13dc30845cfc659c57fb1ee4a8786/hadoop-hdfs-3.2.2-tests.jar!/webapps/datanode}
+2022-12-23 13:13:29,277 INFO  [Listener at localhost/36615] server.AbstractConnector (AbstractConnector.java:doStop(343)) - Stopped ServerConnector@6cff61fc{HTTP/1.1,[http/1.1]}{localhost:0}
+2022-12-23 13:13:29,277 INFO  [Listener at localhost/36615] server.session (HouseKeeper.java:stopScavenging(158)) - node0 Stopped scavenging
+2022-12-23 13:13:29,278 INFO  [Listener at localhost/36615] handler.ContextHandler (ContextHandler.java:doStop(1007)) - Stopped o.e.j.s.ServletContextHandler@4da6d664{static,/static,jar:file:/home/sebasu/.gradle/caches/modules-2/files-2.1/org.apache.hadoop/hadoop-hdfs/3.2.2/e644bd31b0e13dc30845cfc659c57fb1ee4a8786/hadoop-hdfs-3.2.2-tests.jar!/webapps/static,UNAVAILABLE}
+2022-12-23 13:13:29,291 INFO  [Listener at localhost/36615] ipc.Server (Server.java:stop(3403)) - Stopping server on 36615
+2022-12-23 13:13:29,302 INFO  [IPC Server listener on 0] ipc.Server (Server.java:run(1366)) - Stopping IPC Server listener on 0
+2022-12-23 13:13:29,307 INFO  [IPC Server Responder] ipc.Server (Server.java:run(1502)) - Stopping IPC Server Responder
+2022-12-23 13:13:29,308 WARN  [BP-868859862-127.0.1.1-1671797600935 heartbeating to localhost/127.0.0.1:41473] datanode.IncrementalBlockReportManager (IncrementalBlockReportManager.java:waitTillNextIBR(160)) - IncrementalBlockReportManager interrupted
+2022-12-23 13:13:29,308 WARN  [BP-868859862-127.0.1.1-1671797600935 heartbeating to localhost/127.0.0.1:41473] datanode.DataNode (BPServiceActor.java:run(865)) - Ending block pool service for: Block pool BP-868859862-127.0.1.1-1671797600935 (Datanode Uuid 5435336c-53af-41c3-9d57-72ed86fef261) service to localhost/127.0.0.1:41473
+2022-12-23 13:13:29,309 INFO  [BP-868859862-127.0.1.1-1671797600935 heartbeating to localhost/127.0.0.1:41473] datanode.DataNode (BlockPoolManager.java:remove(102)) - Removed Block pool BP-868859862-127.0.1.1-1671797600935 (Datanode Uuid 5435336c-53af-41c3-9d57-72ed86fef261)
+2022-12-23 13:13:29,310 INFO  [BP-868859862-127.0.1.1-1671797600935 heartbeating to localhost/127.0.0.1:41473] impl.FsDatasetImpl (FsDatasetImpl.java:shutdownBlockPool(2866)) - Removing block pool BP-868859862-127.0.1.1-1671797600935
+2022-12-23 13:13:29,311 WARN  [refreshUsed-/tmp/1671797599293-0/data/data1/current/BP-868859862-127.0.1.1-1671797600935] fs.CachingGetSpaceUsed (CachingGetSpaceUsed.java:run(183)) - Thread Interrupted waiting to refresh disk information: sleep interrupted
+2022-12-23 13:13:29,311 WARN  [refreshUsed-/tmp/1671797599293-0/data/data2/current/BP-868859862-127.0.1.1-1671797600935] fs.CachingGetSpaceUsed (CachingGetSpaceUsed.java:run(183)) - Thread Interrupted waiting to refresh disk information: sleep interrupted
+2022-12-23 13:13:29,321 INFO  [Listener at localhost/36615] impl.FsDatasetAsyncDiskService (FsDatasetAsyncDiskService.java:shutdown(193)) - Shutting down all async disk service threads
+2022-12-23 13:13:29,321 INFO  [Listener at localhost/36615] impl.FsDatasetAsyncDiskService (FsDatasetAsyncDiskService.java:shutdown(201)) - All async disk service threads have been shut down
+2022-12-23 13:13:29,322 INFO  [Listener at localhost/36615] impl.RamDiskAsyncLazyPersistService (RamDiskAsyncLazyPersistService.java:shutdown(177)) - Shutting down all async lazy persist service threads
+2022-12-23 13:13:29,322 INFO  [Listener at localhost/36615] impl.RamDiskAsyncLazyPersistService (RamDiskAsyncLazyPersistService.java:shutdown(184)) - All async lazy persist service threads have been shut down
+2022-12-23 13:13:29,326 INFO  [Listener at localhost/36615] datanode.DataNode (DataNode.java:shutdown(2169)) - Shutdown complete.
+2022-12-23 13:13:29,326 INFO  [Listener at localhost/36615] hdfs.MiniDFSCluster (MiniDFSCluster.java:stopAndJoinNameNode(2153)) - Shutting down the namenode
+2022-12-23 13:13:29,326 INFO  [Listener at localhost/36615] namenode.FSNamesystem (FSNamesystem.java:stopActiveServices(1365)) - Stopping services started for active state
+2022-12-23 13:13:29,329 INFO  [org.apache.hadoop.hdfs.server.namenode.FSNamesystem$NameNodeEditLogRoller@6cfd9a54] namenode.FSNamesystem (FSNamesystem.java:run(4138)) - NameNodeEditLogRoller was interrupted, exiting
+2022-12-23 13:13:29,329 INFO  [Listener at localhost/36615] namenode.FSEditLog (FSEditLog.java:endCurrentLogSegment(1410)) - Ending log segment 1, 26
+2022-12-23 13:13:29,335 INFO  [org.apache.hadoop.hdfs.server.namenode.FSNamesystem$LazyPersistFileScrubber@73d4066e] namenode.FSNamesystem (FSNamesystem.java:run(4231)) - LazyPersistFileScrubber was interrupted, exiting
+2022-12-23 13:13:29,338 INFO  [Listener at localhost/36615] namenode.FSEditLog (FSEditLog.java:printStatistics(778)) - Number of transactions: 27 Total time for transactions(ms): 32 Number of transactions batched in Syncs: 9 Number of syncs: 19 SyncTimes(ms): 2 3 
+2022-12-23 13:13:29,340 INFO  [Listener at localhost/36615] namenode.FileJournalManager (FileJournalManager.java:finalizeLogSegment(145)) - Finalizing edits file /tmp/1671797599293-0/name-0-1/current/edits_inprogress_0000000000000000001 -> /tmp/1671797599293-0/name-0-1/current/edits_0000000000000000001-0000000000000000027
+2022-12-23 13:13:29,341 INFO  [Listener at localhost/36615] namenode.FileJournalManager (FileJournalManager.java:finalizeLogSegment(145)) - Finalizing edits file /tmp/1671797599293-0/name-0-2/current/edits_inprogress_0000000000000000001 -> /tmp/1671797599293-0/name-0-2/current/edits_0000000000000000001-0000000000000000027
+2022-12-23 13:13:29,342 INFO  [FSEditLogAsync] namenode.FSEditLog (FSEditLogAsync.java:run(253)) - FSEditLogAsync was interrupted, exiting
+2022-12-23 13:13:29,345 INFO  [CacheReplicationMonitor(186181423)] blockmanagement.CacheReplicationMonitor (CacheReplicationMonitor.java:run(169)) - Shutting down CacheReplicationMonitor
+2022-12-23 13:13:29,346 INFO  [Listener at localhost/36615] ipc.Server (Server.java:stop(3403)) - Stopping server on 41473
+2022-12-23 13:13:29,350 INFO  [IPC Server listener on 0] ipc.Server (Server.java:run(1366)) - Stopping IPC Server listener on 0
+2022-12-23 13:13:29,350 INFO  [StorageInfoMonitor] blockmanagement.BlockManager (BlockManager.java:run(4869)) - Stopping thread.
+2022-12-23 13:13:29,350 INFO  [RedundancyMonitor] blockmanagement.BlockManager (BlockManager.java:run(4834)) - Stopping RedundancyMonitor.
+2022-12-23 13:13:29,350 INFO  [IPC Server Responder] ipc.Server (Server.java:run(1502)) - Stopping IPC Server Responder
+2022-12-23 13:13:29,389 INFO  [Listener at localhost/36615] namenode.FSNamesystem (FSNamesystem.java:stopActiveServices(1365)) - Stopping services started for active state
+2022-12-23 13:13:29,389 INFO  [Listener at localhost/36615] namenode.FSNamesystem (FSNamesystem.java:stopStandbyServices(1466)) - Stopping services started for standby state
+2022-12-23 13:13:29,401 INFO  [Listener at localhost/36615] handler.ContextHandler (ContextHandler.java:doStop(1007)) - Stopped o.e.j.w.WebAppContext@36074e47{hdfs,/,null,UNAVAILABLE}{jar:file:/home/sebasu/.gradle/caches/modules-2/files-2.1/org.apache.hadoop/hadoop-hdfs/3.2.2/e644bd31b0e13dc30845cfc659c57fb1ee4a8786/hadoop-hdfs-3.2.2-tests.jar!/webapps/hdfs}
+2022-12-23 13:13:29,407 INFO  [Listener at localhost/36615] server.AbstractConnector (AbstractConnector.java:doStop(343)) - Stopped ServerConnector@1a6f5124{HTTP/1.1,[http/1.1]}{localhost:0}
+2022-12-23 13:13:29,408 INFO  [Listener at localhost/36615] server.session (HouseKeeper.java:stopScavenging(158)) - node0 Stopped scavenging
+2022-12-23 13:13:29,408 INFO  [Listener at localhost/36615] handler.ContextHandler (ContextHandler.java:doStop(1007)) - Stopped o.e.j.s.ServletContextHandler@158d255c{static,/static,jar:file:/home/sebasu/.gradle/caches/modules-2/files-2.1/org.apache.hadoop/hadoop-hdfs/3.2.2/e644bd31b0e13dc30845cfc659c57fb1ee4a8786/hadoop-hdfs-3.2.2-tests.jar!/webapps/static,UNAVAILABLE}
+
+BUILD SUCCESSFUL in 16s
+2 actionable tasks: 2 executed

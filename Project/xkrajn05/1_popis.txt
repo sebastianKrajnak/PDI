@@ -1,0 +1,10 @@
+Výsledok Pig/Grunt skriptu je zoznam zoskupeý podľa hodnôt playerID a teamID, pre každého hráča bol vypočítaný priemer zo všetkých hier
+a celková suma jeho hier, ktoré sa taktiež nachádzajú vo výstupnom liste.
+
+MapReduce aplikácia pozostáva z dvoch častí:
+	Map - v tejto časti sa každý riadok konvertuje na typ String, následne sa rozdelia jeho hodnoty do poľa a to podľa rozdeľovača
+	      t.j. ",". Podmienkou bolo aby sme získali priemer a sumu hier odohraných po roku 1995 (vrátane). Výsledkom časti map je dvojica
+    	      kľúč hodnota, kde kľúč je zložený z (playerID, teamID) a hodnota je (počet hier,1)
+	Reduce - najskôr sa všetky hodnoty získané z operácie Map opäť rozdelia podľa ",", uložia do poľa nums a následne sa z jednotlivých
+		 prvkov tohto poľa vypočíta celková suma a celkový počet hier. V závere operácie Reduce je z týchto dvoch hodnôt vypočítaný priemer 
+		 hier, ktorý je spolu s celkovým počtom hier uložený do výsledného listu, ktorý je podobný ako výsledný list z Pig/Grunt skriptu.
